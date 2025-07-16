@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SPELLL 2025 :: CALL FOR PAPERS</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: ssn - v2.1.0
+  * Template URL: https://bootstrapmade.com/ssn-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .section-title {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .section-title h2 {
+      font-size: 2.5rem;
+      color: #1a2980;
+      margin-bottom: 10px;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .section-title h2:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #1a2980, #26d0ce);
+      border-radius: 2px;
+    }
+    
+    /* Enhanced Track Container Styles */
+    .tracks-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+    
+    .track-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      z-index: 1;
+    }
+    
+    .track-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .track-card:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(26, 41, 128, 0.05), rgba(38, 208, 206, 0.05));
+      z-index: -1;
+    }
+    
+    /* Unique border patterns for each track */
+    .track-card:nth-child(1) {
+      border: 4px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(45deg, #1a2980, #3f51b5, #26d0ce, #1a2980) border-box;
+      border-radius: 15px;
+    }
+    
+    .track-card:nth-child(2) {
+      border: 4px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(90deg, #26d0ce, #4ecdc4, #ff6b6b, #26d0ce) border-box;
+      border-radius: 15px;
+    }
+    
+    .track-card:nth-child(3) {
+      border: 4px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(135deg, #ff6b6b, #ff9e7d, #ffd166, #ff6b6b) border-box;
+      border-radius: 15px;
+    }
+    
+    .track-card:nth-child(4) {
+      border: 4px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(180deg, #4ecdc4, #1a936f, #6a0572, #4ecdc4) border-box;
+      border-radius: 15px;
+    }
+    
+    .track-card:nth-child(5) {
+      border: 4px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(225deg, #ffd166, #ffb347, #9d4edd, #ffd166) border-box;
+      border-radius: 15px;
+    }
+    
+    .track-card:nth-child(6) {
+      border: 4px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(270deg, #6a0572, #9d4edd, #1a2980, #6a0572) border-box;
+      border-radius: 15px;
+    }
+    
+    .track-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      position: relative;
+    }
+    
+    .track-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1a2980, #26d0ce);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      color: white;
+      font-size: 24px;
+      box-shadow: 0 5px 15px rgba(26, 41, 128, 0.2);
+      flex-shrink: 0;
+    }
+    
+    .track-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #1a2980;
+      position: relative;
+    }
+    
+    .track-title:after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: #26d0ce;
+      border-radius: 2px;
+    }
+    
+    .track-content ul {
+      list-style-type: none;
+      padding-left: 10px;
+    }
+    
+    .track-content ul li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+      transition: all 0.3s ease;
+    }
+    
+    .track-content ul li:hover {
+      transform: translateX(5px);
+      color: #1a2980;
+    }
+    
+    .track-content ul li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #26d0ce;
+      font-weight: bold;
+    }
+    
+    .track-card:nth-child(1) .track-icon { background: linear-gradient(135deg, #1a2980, #3f51b5); }
+    .track-card:nth-child(2) .track-icon { background: linear-gradient(135deg, #26d0ce, #4ecdc4); }
+    .track-card:nth-child(3) .track-icon { background: linear-gradient(135deg, #ff6b6b, #ff9e7d); }
+    .track-card:nth-child(4) .track-icon { background: linear-gradient(135deg, #4ecdc4, #1a936f); }
+    .track-card:nth-child(5) .track-icon { background: linear-gradient(135deg, #ffd166, #ffb347); }
+    .track-card:nth-child(6) .track-icon { background: linear-gradient(135deg, #6a0572, #9d4edd); }
+    
+    /* Content sections after tracks */
+    .content-section {
+      margin: 15px 0; /* Reduced from 30px to 15px */
+      padding: 0 20px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .content-section hr {
+      border: none;
+      height: 2px;
+      background: linear-gradient(90deg, #1a2980, #26d0ce);
+      margin: 10px 0; /* Reduced from 20px to 10px */
+      border-radius: 1px;
+    }
+    
+    .content-section .section-title {
+      text-align: left;
+      margin-bottom: 15px; /* Reduced from 20px to 15px */
+    }
+    
+    .content-section .section-title h2 {
+      font-size: 2rem;
+      margin-bottom: 10px; /* Reduced from 15px to 10px */
+    }
+    
+    .content-section .section-title h2:after {
+      left: 0;
+      transform: none;
+    }
+    
+    .content-section p {
+      text-align: justify;
+      margin-bottom: 10px; /* Reduced from 15px to 10px */
+      line-height: 1.7;
+    }
+    
+    .content-section ul {
+      padding-left: 30px;
+      margin-bottom: 10px; /* Reduced from 15px to 10px */
+    }
+    
+    .content-section ul li {
+      margin-bottom: 6px; /* Reduced from 8px to 6px */
+      line-height: 1.6;
+    }
+    
+    .springer-logo {
+      text-align: center;
+      margin: 15px 0; /* Reduced from 20px to 15px */
+    }
+    
+    .springer-logo img {
+      max-width: 300px;
+      height: auto;
+    }
+    
+    /* Updated Notice Styles */
+    .notice {
+      background-color: white;
+      color: #28a745; /* Green text color */
+      text-align: center;
+      padding: 15px 0;
+      font-weight: bold;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #28a745;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      font-size: 1.1rem;
+    }
+
+    /* Updated Contents Menu Styles */
+    .contents-container {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    
+    .contents {
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      flex: 1;
+      min-width: 300px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .contents h3 {
+      font-size: 1.5rem;
+      color: #28a745; /* Green heading */
+      margin-bottom: 15px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .contents h3:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: #28a745;
+      border-radius: 2px;
+    }
+    
+    .contents ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .contents ul li {
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #eee;
+      transition: all 0.3s ease;
+    }
+    
+    .contents ul li:last-child {
+      border-bottom: none;
+    }
+    
+    .contents ul li a {
+      color: #333; /* Black text */
+      text-decoration: none;
+      font-weight: 500;
+      display: block;
+      transition: all 0.3s ease;
+      position: relative;
+      padding-left: 25px;
+    }
+    
+    .contents ul li a:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #28a745;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+    
+    .contents ul li a:hover {
+      color: #28a745; /* Green on hover */
+      transform: translateX(5px);
+    }
+    
+    .contents ul li a:hover:before {
+      transform: translateX(5px);
+    }
+    
+    .image-placeholder {
+      flex: 1;
+      min-width: 300px;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .image-placeholder img {
+      max-width: 100%;
+      height: auto;
+      opacity: 0.8;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 850px) {
+      .contents-container {
+        flex-direction: column;
+      }
+      
+      .image-placeholder {
+        height: 200px;
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1100px) {
+      .tracks-container {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      }
+    }
+    
+    @media (max-width: 850px) {
+      .tracks-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      
+      .content-section {
+        padding: 0 15px;
+      }
+      
+      .notice {
+        font-size: 0.9rem;
+      }
+      
+      .contents {
+        padding: 10px;
+      }
+      
+      .contents h3 {
+        font-size: 1.3rem;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .section-title h2 {
+        font-size: 2rem;
+      }
+      
+      .content-section .section-title h2 {
+        font-size: 1.7rem;
+      }
+      
+      .track-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .track-icon {
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+      
+      .track-card {
+        padding: 25px;
+      }
+      
+      .track-title {
+        font-size: 1.6rem;
+      }
+      
+      .notice {
+        padding: 8px 0;
+      }
+      
+      .contents ul li {
+        font-size: 0.9rem;
+      }
+    }
+    
+    /* Animation for track appearance */
+    @keyframes trackAppear {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .track-card {
+      animation: trackAppear 0.6s ease forwards;
+      opacity: 0;
+    }
+    
+    .track-card:nth-child(1) { animation-delay: 0.1s; }
+    .track-card:nth-child(2) { animation-delay: 0.2s; }
+    .track-card:nth-child(3) { animation-delay: 0.3s; }
+    .track-card:nth-child(4) { animation-delay: 0.4s; }
+    .track-card:nth-child(5) { animation-delay: 0.5s; }
+    .track-card:nth-child(6) { animation-delay: 0.6s; }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="d-flex">
+
+      <div class="logo mr-auto">
+        <a href="index.html"><img src="assets/img/logo/logo IIITK.jpg"></a>
+
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="NOT FOUND" class="img-fluid"></a>-->
+      </div>
+
+      <style>
+        /* Default styling for navigation menu items */
+        .nav-menu.navbar ul li a {
+            color: black !important; /* Default color for all menu items */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Hover state for navigation menu items */
+        .nav-menu.navbar ul li a:hover {
+            color: green !important; /* Green on hover */
+        }
+
+        /* Active state for navigation menu items */
+        .nav-menu.navbar ul li.active a {
+            color: green !important; /* Green for the active menu item */
+        }
+
+        /* Dropdown menu items default state */
+        .nav-menu.navbar .dropdown-content a {
+            color: black !important; /* Default color for dropdown items */
+        }
+
+        /* Hover state for dropdown menu items */
+        .nav-menu.navbar .dropdown-content a:hover {
+            color: green !important; /* Green on hover for dropdown items */
+        }
+
+        /* Optional: Ensure the dropdown button itself follows the same color scheme */
+        .nav-menu.navbar .dropbtn {
+            color: black !important; /* Default color for dropdown button */
+        }
+
+        .nav-menu.navbar .dropbtn:hover {
+            color: green !important; /* Green on hover for dropdown button */
+        }
+
+        .back-to-top {
+          position: fixed;
+          display: none;
+          width: 40px;
+          height: 40px;
+          border-radius: 3px;
+          right: 15px;
+          bottom: 15px;
+          background: #57884d !important;
+          color: #fff !important;
+          transition: display 0.5s ease-in-out !important;
+          z-index: 99999 !important;
+        }
+
+        .back-to-top i {
+          font-size: 24px !important;
+          position: absolute !important;
+          top: 8px !important;
+          left: 8px !important;
+        }
+
+        .back-to-top:hover {
+          color: #fff;
+          background: #1ed054 !important;
+          transition: background 0.2s ease-in-out !important;
+        }
+      </style>
+      
+      <nav class="nav-menu d-none d-lg-block navbar">
+        <ul id="old">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About IIITK.html">About IIITK</a></li>
+          <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+            <div class="dropdown">
+              <button class="dropbtn" style="font-weight: 700;">Committee <i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <a href="Scientific Advisory.html">Scientific Advisory Committee</a>
+                <a href="committee.html">Organizing Committee</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="speakers.html">Keynote Talks</a></li>
+          <li class="active"><a href="callforpapers.html">Call For Papers</a></li>
+          <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+            <div class="dropdown">
+              <button class="dropbtn" style="font-weight: 700;">Special-Session <i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <a href="workshop.html">Call for Workshops</a>
+                <a href="tutorials.html">Call for Tutorials</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="imp-dates.html">Important Dates</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="sponsor.html">Sponsorship</a></li>
+
+          <!-- Moved Archives tab here -->
+          <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+            <div class="dropdown">
+              <button class="dropbtn" style="font-weight: 700;">Previous conferences<i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <a href="./SPELLL2024/index.html" target="_blank">SPELLL 2024</a>
+                <a href="./proceedings_2024.html" target="_blank">Proceedings of SPELLL 2024</a>
+                <a href="https://spelll.org/SPELLL2023/index.html" target="_blank">SPELLL 2023</a>
+                <a href="https://link.springer.com/book/9783031584947" target="_blank">Proceedings of SPELLL 2023</a>
+                <a href="https://spelll.org/SPELLL2023/SPELLL2022/index.html" target="_blank">SPELLL 2022</a>
+                <a href="https://link.springer.com/book/10.1007/978-3-031-33231-9" target="_blank">Proceedings of SPELLL 2022</a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" style="height: 60vh; position: relative; overflow: hidden;">
+      <!-- Background Image -->
+      <div style="
+        background: url('./assets/img/iiit4-re.png') no-repeat center center/cover;
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: 1;
+      "></div>
+
+      <!-- Overlay -->
+      <div style="
+        background: rgba(0, 0, 0, 0.5); /* dark overlay */
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: 2;
+      "></div>
+
+      <!-- Text Content -->
+      <div class="hero-container" data-aos="fade-up" style="position: relative; z-index: 3; text-align: center; color: white;">
+        <br/>
+        <br/>
+        <br/>
+        <h1 style="font-family: 'Times New Roman', Times, serif;">Welcome to SPELLL 2025</h1><br>
+        <h2 style="font-family: 'Times New Roman', Times, serif;">
+          FOURTH INTERNATIONAL CONFERENCE ON  <br> SPEECH AND LANGUAGE TECHNOLOGIES FOR LOW-RESOURCE LANGUAGES 
+        </h2><br>
+        <h2 style="font-family: 'Times New Roman', Times, serif;">December 18-20, 2025 - (Hybrid Mode)</h2><br>
+        <h2 style="font-family: 'Times New Roman', Times, serif;">Indian Institute of Information Technology (IIIT), Kottayam, INDIA</h2>
+      </div>
+    </section>
+    <!-- End Hero -->
+  
+    <br/><br/><br/><br/><br/> 
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs" data-aos="fade-up">
+      <div class="container section-title2">
+        <ol id="old">
+          <li><a href="index.html" style="color: green;">Home</a></li>
+          <li style="color: green;">Call for Papers</li>
+        </ol>
+      </div>
+    </section><!-- End Breadcrumbs -->
+    <!-- Notice -->
+    <div class="notice" style="color: black">
+      Notice: Submission deadline for papers is August 20, 2025, 11:59 PM IST. <img src="assets/img/new tag.gif" alt="new tag">
+    </div>
+
+    <!-- Contents Menu with Image Placeholder -->
+    <div class="container">
+      <div class="contents-container">
+        <div class="contents">
+          <h3>Contents</h3>
+          <ul>
+            <li><a href="#Call-For-Papers">Call for Papers</a></li>
+            <li><a href="#AI-Assisted-Research-Disclosure-Guidelines">AI-Assisted Research Disclosure Guidelines</a></li>
+            <li><a href="#Submission-Guidelines">Submission Guidelines</a></li>
+            <li><a href="#Publication">Publication</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <section id="Call-For-Papers" class="Call For Papers">
+      <div class="container">
+        <div class="section-title">
+          <h2 style="color: black;">CALL FOR PAPERS</h2>
+          <br>
+          <p>
+            This conference aims at bringing together researchers from across the world working on low-resourced and minority languages to create more speech and language technology for languages of the world.
+          </p>
+          <br>
+          <p>We invite submissions on topics that include, but are not limited to, the following:</p>
+        </div>
+
+        <!-- Tracks Container -->
+        <div class="tracks-container">
+          <!-- Track 1 -->
+          <div class="track-card">
+            <div class="track-header">
+              <div class="track-icon">📚</div>
+              <h3 class="track-title" style="color: green;">Track-1: Language Resources (LRs)</h3>
+            </div>
+            <div class="track-content">
+              <ul>
+                <li>Lexicons and machine-readable dictionaries</li>
+                <li>Linguistic Theories, Phonology, Morphological analysis, Syntax and Semantics</li>
+                <li>Corpus development, tools, analysis and evaluation</li>
+                <li>Issues in the design, construction and use of LRs: text, speech, sign, gesture, image, in single or multimodal/multimedia data</li>
+                <li>Exploitation of LRs in systems and applications</li>
+                <li>Annotation, analysis, enrichment of text archives</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Track 2 -->
+          <div class="track-card">
+            <div class="track-header">
+              <div class="track-icon">💻</div>
+              <h3 class="track-title" style="color: green;">Track-2: Language Technologies (LT)</h3>
+            </div>
+            <div class="track-content">
+              <ul>
+                <li>Code-mixing</li>
+                <li>Cognitive modeling and psycholinguistics</li>
+                <li>Computer-assisted language learning (call)</li>
+                <li>Covid-19 alert, NLP applications for emergency situations and crisis management</li>
+                <li>Equality, diversity, and inclusion for language technology</li>
+                <li>Fake news, spam, and rumour detection</li>
+                <li>Hate speech detection and offensive language detection</li>
+                <li>Machine translation, sentiment analysis, and text summarization</li>
+                <li>Text and data mining for social sciences and humanities research</li>
+                <li>Text and data mining of (bio) medical literature, including pandemics</li>
+                <li>Knowledge representation and reasoning</li>
+                <li>Knowledge graphs for corpora processing and analysis</li>
+                <li>Applications for language, data and knowledge</li>
+                <li>Question answering and semantic search</li>
+                <li>Text analytics on big data</li>
+                <li>Semantic content management</li>
+                <li>Computer-aided language learning</li>
+                <li>Natural language interfaces to big data</li>
+                <li>Knowledge-based NLP</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Track 3 -->
+          <div class="track-card">
+            <div class="track-header">
+              <div class="track-icon">🎤</div>
+              <h3 class="track-title" style="color: green;">Track-3: Speech Technologies (ST)</h3>
+            </div>
+            <div class="track-content">
+              <ul>
+                <li>Speech technology and automatic speech recognition</li>
+                <li>Spoken dialog systems and analysis of conversation</li>
+                <li>Spoken language processing — translation, information retrieval, summarization resources and evaluation</li>
+                <li>Speaker verification and identification</li>
+                <li>Multimodal/multimedia speaker recognition and diarization</li>
+                <li>Analysis of speech and audio signals</li>
+                <li>Speech coding and enhancement</li>
+                <li>Speech recognition - architecture, search, and linguistic components</li>
+                <li>Speech, voice, and hearing disorders</li>
+                <li>Speech synthesis and spoken language generation</li>
+                <li>Cross-lingual and multilingual components for speech recognition / code switching</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Track 4 -->
+          <div class="track-card">
+            <div class="track-header">
+              <div class="track-icon">👁️</div>
+              <h3 class="track-title" style="color: green;">Track-4: Computer Vision and Natural Language Processing (NLP)</h3>
+            </div>
+            <div class="track-content">
+              <ul>
+                <li>Image Captioning</li>
+                <li>Optical Character Recognition</li>
+                <li>Handwritten Recognition</li>
+                <li>Visual Question Answering</li>
+                <li>Machine learning for multimodal interaction</li>
+                <li>Mobile multimodal systems</li>
+                <li>Multimodal behaviour generation</li>
+                <li>Multimodal datasets and validation</li>
+                <li>Multimodal dialogue modeling</li>
+                <li>Multimodal fusion and representation</li>
+                <li>Multimodal interactive applications</li>
+                <li>Novel multimodal datasets</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Track 5 -->
+          <div class="track-card">
+            <div class="track-header">
+              <div class="track-icon">🚀</div>
+              <h3 class="track-title" style="color: green;">Track-5: Applications of NLP</h3>
+            </div>
+            <div class="track-content">
+              <ul>
+                <li>NLP for Social media applications</li>
+                <li>Federated Learning</li>
+                <li>Disordered Speech with NLP</li>
+                <li>Explainable models for speech and NLP technologies</li>
+                <li>Quantum Computing with NLP</li>
+                <li>Conversational agents using NLP and Speech technologies</li>
+                <li>Cross cultural NLP</li>
+                <li>NLP in Education</li>
+                <li>Leveraging NLP and Speech technologies to promote heritage and culture</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Track 6 -->
+          <div class="track-card">
+            <div class="track-header">
+              <div class="track-icon">⚖️</div>
+              <h3 class="track-title" style="color: green;">Track-6: Federated Learning & Ethical NLP</h3>
+            </div>
+            <div class="track-content">
+              <ul>
+                <li>Ethics, Bias, and Legislation in Speech, Vision, and NLP</li>
+                <li>Digital privacy and identity management in NLP and Speech Technologies</li>
+                <li>Explainability of NLP and speech technology tools</li>
+                <li>Bias in Large Language Models (LLMs) and multimodal model</li>
+                <li>Bias in security related NLP and Speech datasets and annotations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="content-section">
+      <!-- AI-Assisted Research Disclosure Guidelines Section -->
+      <hr>
+      <div class="section-title">
+        <h2 id="AI-Assisted-Research-Disclosure-Guidelines" style="color: black;">AI-ASSISTED RESEARCH DISCLOSURE GUIDELINES</h2>
+        <p style="text-align: justify; color: black; margin-bottom: 20px;"></br>
+          The SPELLL 2025 conference has embraced the Springer Nature Policy regarding AI writing tools, which mandates authors to disclose AI assistance in their research. Springer Nature is monitoring ongoing developments in this area closely and will review (and update) these policies as appropriate.
+        </p>
+        
+        <ol style="color: black; text-align: justify; padding-left: 30px; margin-bottom: 20px;">
+          <li style="margin-bottom: 10px;">AI authorship.</li>
+          <li style="margin-bottom: 10px;">Generative AI images.</li>
+          <li style="margin-bottom: 10px;">AI use by peer reviewers.</li>
+        </ol>
+        
+        <p style="color: black; text-align: justify; margin-bottom: 20px;">
+          For more details please visit: 
+          <a href="https://www.springer.com/gp/editorial-policies/artificial-intelligence--ai-/25428500?srsltid=AfmBOoreWb8ZbuJy6R4k3sh4EFD5mXZ1-g5W7mJn3Siq_4qVKxBC-bZH" 
+             target="_blank" 
+             style="color: blue; word-break: break-all;">
+            https://www.springer.com/gp/editorial-policies/artificial-intelligence--ai-/25428500?srsltid=AfmBOoreWb8ZbuJy6R4k3sh4EFD5mXZ1-g5W7mJn3Siq_4qVKxBC-bZH
+          </a>
+        </p>
+        
+        <p style="color: black; text-align: justify;">
+          In all cases, authors are responsible for the correctness of their methods, results, and writing. Authors should check for potential plagiarism, both of text and code.
+        </p>
+      </div>
+
+      <!-- Submission Guidelines Section -->
+      <div class="content-section">
+        <hr>
+        <div class="section-title">
+          <h2 id="Submission-Guidelines" style="color: black;">SUBMISSION GUIDELINES</h2>
+          
+          <h3 style="color: green; margin-top: 20px;"><strong>Regular Papers</strong></h3>
+          <p style="color: black;">Regular submissions must describe substantial, original, completed and unpublished work. Wherever appropriate, concrete evaluation and analysis should be included.</p>
+          <p style="color: black;">Regular papers may consist of 12 - 15 pages of content including references. However, page restrictions will not be followed strictly, if the authors wish to have more explanation of their work.</p>
+          
+          <h3 style="color: green; margin-top: 20px;"><strong>Short Papers</strong></h3>
+          <p style="color: black;">SPELLL 2025 also solicits short papers. Short paper submissions must describe original and unpublished work. Short papers should have a point that can be made in a few pages. Some kinds of short papers are:</p>
+          <ul style="color: black;">
+            <li>A small, focused contribution</li>
+            <li>Work in progress</li>
+            <li>Experience notes</li>
+          </ul>
+          <p style="color: black;">Short papers may consist of 6 - 8 pages including references. Short papers will be presented in one or more oral or poster sessions. While short papers will be distinguished from regular papers in the proceedings, there will be no distinction in the proceedings between short papers presented orally and as posters. However, page restrictions will not be followed strictly, if the authors wish to have more explanation of their work.</p>
+          
+          <h3 style="color: green; margin-top: 20px;"><strong>Review Policy</strong></h3>
+          <p style="color: black;">For SPELLL 2025, the evaluation of submissions will employ a double-blind review process, ensuring impartiality and confidentiality in the assessment of papers. Under this system, the identities of both the reviewers and the authors are kept anonymous. This means that authors do not know who reviews their papers, and reviewers are unaware of the authors' identities. This approach is designed to minimize biases related to the authors' background, affiliation, or previous work, promoting an objective evaluation based on the submission's originality, relevance, importance, and clarity.
+          Furthermore, authors are required to maintain anonymity in their citations as well. When referring to their previous work, authors should use the third person to avoid revealing their identity. For example, instead of saying "In our earlier work..." or "We previously showed that...", authors should frame these citations as if referencing another researcher's work, such as "Smith et al. (2020) demonstrated that...". This guideline helps preserve the integrity of the double-blind review process, ensuring that papers are evaluated solely on their merits.</p>
+          
+          <h3 style="color: green; margin-top: 20px;"><strong>Author Guidelines</strong></h3>
+          <ul style="color: black; text-align: justify; line-height: 1.7;">
+            <li>When submitting a paper, authors must rigorously follow the double-blind policy guidelines. This includes omitting names and affiliations from the submission and ensuring adherence to the review policy guidelines to maintain anonymity.</li>
+            <li>Authors must follow the Springer CCIS formatting instructions.</li>
+            <li>For camera-ready papers use <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v8" style="color: blue;" target="_blank">Latex or Word style</a> provided on the authors' page for the preparation of papers.</li>
+            <li>The LaTeX Proceedings Template for scientific authoring platform in <a href="https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WuA4JS5uZpi" style="color: blue;" target="_blank">Overleaf.</a></li>
+            <li>Each paper will receive at least three reviews. At least one author of each accepted paper must register by the early registration date indicated on the conference website and present the paper.</li>
+          </ul>
+          
+          <p style="color: black; margin-top: 15px;">Submission Link: <a href="https://openreview.net/group?id=SPELLL.org/2025/Conference" style="color: blue;" target="_blank">https://openreview.net/group?id=SPELLL.org/2025/Conference#tab-your-consoles </a></p>
+          <p>For LTP : <a href="#" style="color: blue;" target="_blank">To Be Announced.</a> </p>
+        </div>
+      </div>
+
+      <!-- Publication Section -->
+      <div class="content-section">
+        <hr>
+        <div class="section-title">
+          <h2 id="Publication" style="color: black;">PUBLICATION</h2>
+          <p style="color: black;">
+            Accepted papers that are presented at the conference will be published in the Springer series: <span style="color: blue;">Communications in Computer and Information Science (CCIS)</span>.
+          </p>
+          <p style="color: black;">
+            Volumes published will be indexed in DBLP, Google Scholar, EI-Compendex, Mathematical Reviews, SCImago, Scopus. CCIS volumes are also submitted for the inclusion in ISI Proceedings.
+          </p>
+          
+          <div class="springer-logo">
+            <img src="./assets/img/logo/Springer-CCIS-Logo.png" alt="Springer CCIS Logo">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <!-- Venue Section -->
+          <div class="col-lg-6 col-md-6 venue-container">
+            <div class="venue-info">
+              <h4>Conference Venue</h4>
+              <div class="venue-address">
+                <p>
+                  Indian Institute of Information Technology - Kottayam,<br>
+                  Valavoor.P.O − Pala,<br> 
+                  Kottayam  − 686635,<br>
+                  Kerala, INDIA
+                </p>
+                <div class="gmaps-link">
+                  <a href="https://www.google.com/maps/place/Indian+Institute+of+Information+Technology+(IIIT)+Kottayam/@9.7552146,76.647477,17z/data=!3m1!4b1!4m6!3m5!1s0x3b07ce23bc170053:0x8757971e61eb21dd!8m2!3d9.7552146!4d76.6500519!16s%2Fg%2F11btxcz4c7?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D" 
+                     target="_blank" style="color:#95e600">
+                    <i class="icofont-location-pin"></i> View on Google Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Section (IIITK and SPELLL) -->
+          <div class="col-lg-6 col-md-6 footer-newsletter">
+            <h4>Social Media Links</h4>
+            
+            <!-- IIITK Social Media Links -->
+            <div class="social-links">
+              <a href="https://twitter.com/IIITKKottayam" class="x-logo" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/IIITKottayamofficial/" class="facebook" target="_blank"><i class="icofont-facebook"></i></a>
+              <a href="https://www.instagram.com/iiitkottayam/" class="instagram" target="_blank"><i class="icofont-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UC3jrKDXjl7_c5bld5x8C1vw" class="youtube" target="_blank"><i class="icofont-youtube"></i></a>
+              <a href="https://www.linkedin.com/in/iiit-kottayam" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a>
+            </div>
+
+            <!-- SPELLL Social Media Links -->
+            <h4 style="margin-top: 20px;">SPELLL Social Media</h4>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/spelll-conference/" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          © Copyright <strong><span>IIITK</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Add scroll animations
+      document.addEventListener('DOMContentLoaded', function() {
+        const trackCards = document.querySelectorAll('.track-card');
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.animation = 'trackAppear 0.6s ease forwards';
+            }
+          });
+        }, { threshold: 0.1 });
+        
+        trackCards.forEach(card => {
+          observer.observe(card);
+        });
+        
+        // Add hover effect for list items
+        const listItems = document.querySelectorAll('.track-content ul li');
+        listItems.forEach(item => {
+          item.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateX(5px)';
+            this.style.color = '#1a2980';
+          });
+          
+          item.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateX(0)';
+            this.style.color = '';
+          });
+        });
+      });
+    </script>
+
+  </body>
+</html>

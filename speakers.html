@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SPELLL 2025 :: KEYNOTE TALKS</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style1.css" rel="stylesheet">
+  <link href="assets/css/style3s.css" rel="stylesheet">
+
+  <style>
+    /* Custom Styles for Keynote Page */
+    .keynote-section {
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      margin-bottom: 50px;
+      border: none;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .keynote-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    }
+    
+    .keynote-section h2 {
+      position: relative;
+      padding-bottom: 20px;
+      color: #2c3e50;
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+    
+    .keynote-section h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 4px;
+      background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    }
+    
+    .speakers-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 -20px;
+    }
+    
+    .speaker-column {
+      flex: 0 0 calc(33.333% - 40px);
+      max-width: calc(33.333% - 40px);
+      margin: 0 20px 40px;
+      position: relative;
+    }
+    
+    .speaker-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.4s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-left: 5px solid #4b6cb4;
+      text-align: center;
+    }
+    
+    .speaker-card:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 30px 45px rgba(0, 0, 0, 0.15);
+    }
+    
+    .speaker-img {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 25px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .speaker-img-container {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+      border: 4px solid #f1f5f9;
+      background-color: #f5f7fa;
+    }
+    
+    .speaker-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .speaker-card:hover .speaker-img img {
+      transform: scale(1.05);
+    }
+    
+    .speaker-info {
+      width: 100%;
+    }
+    
+    .ts-title {
+      margin-bottom: 10px;
+    }
+    
+    .ts-title a {
+      color: #2c3e50;
+      font-weight: 600;
+      transition: color 0.3s;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      display: block;
+    }
+    
+    .ts-title a:hover {
+      color: #4b6cb7;
+      text-decoration: none;
+    }
+    
+    .speaker-info p {
+      color: #7f8c8d;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    
+    .speaker-info p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .speaker-info p em {
+      color: #576574;
+      font-style: italic;
+      display: block;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed #e0e6ed;
+    }
+    
+    .coming-soon {
+      font-size: 1.1rem;
+      color: #576574;
+      text-align: center;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      margin: 20px 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .coming-soon p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    
+    .coming-soon i {
+      margin-top: 10px;
+      display: block;
+      font-size: 2.5rem;
+      color: #4b6cb7;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .speaker-card {
+      animation: fadeIn 0.6s ease forwards;
+      opacity: 0;
+    }
+    
+    /* Delay animations for each card */
+    .speaker-column:nth-child(1) .speaker-card { animation-delay: 0.1s; }
+    .speaker-column:nth-child(2) .speaker-card { animation-delay: 0.2s; }
+    .speaker-column:nth-child(3) .speaker-card { animation-delay: 0.3s; }
+    .speaker-column:nth-child(4) .speaker-card { animation-delay: 0.4s; }
+    .speaker-column:nth-child(5) .speaker-card { animation-delay: 0.5s; }
+    .speaker-column:nth-child(6) .speaker-card { animation-delay: 0.6s; }
+    .speaker-column:nth-child(7) .speaker-card { animation-delay: 0.7s; }
+    .speaker-column:nth-child(8) .speaker-card { animation-delay: 0.8s; }
+    .speaker-column:nth-child(9) .speaker-card { animation-delay: 0.9s; }
+    
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+      .speaker-column {
+        flex: 0 0 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+      }
+    }
+    
+    @media (max-width: 767px) {
+      .keynote-section {
+        padding: 25px;
+      }
+      
+      .keynote-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+      }
+      
+      .speaker-column {
+        flex: 0 0 calc(100% - 40px);
+        max-width: calc(100% - 40px);
+      }
+      
+      .speaker-card {
+        padding: 20px;
+      }
+      
+      .speaker-img {
+        width: 150px;
+        height: 150px;
+      }
+      
+      .ts-title a {
+        font-size: 1.15rem;
+      }
+      
+      .speaker-info p {
+        font-size: 0.9rem;
+      }
+
+      /* Adjust margin-top for mobile view */
+      #speakers {
+        margin-top: 40px !important;
+      }
+    }
+    
+    /* Year separator */
+    .year-divider {
+      width: 100%;
+      margin: 20px 0 40px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .year-divider span {
+      display: inline-block;
+      padding: 0 15px;
+      background: #f5f7fa;
+      position: relative;
+      z-index: 1;
+      color: #4b6cb7;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    
+    .year-divider:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: #d1d8e0;
+    }
+
+    /* Add margin-top to Keynote Talks 2025 section for system view */
+    #speakers {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body style="background-color:white">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="d-flex">
+      <div class="logo mr-auto">
+        <a href="index.html"><img src="assets\img\logo\logo IIITK.jpg"></a>
+      </div>
+
+      <style>
+        /* Default styling for navigation menu items */
+.nav-menu.navbar ul li a {
+    color: black !important; /* Default color for all menu items */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover state for navigation menu items */
+.nav-menu.navbar ul li a:hover {
+    color: green !important; /* Green on hover */
+}
+
+/* Active state for navigation menu items */
+.nav-menu.navbar ul li.active a {
+    color: green !important; /* Green for the active menu item */
+}
+
+/* Dropdown menu items default state */
+.nav-menu.navbar .dropdown-content a {
+    color: black !important; /* Default color for dropdown items */
+}
+
+/* Hover state for dropdown menu items */
+.nav-menu.navbar .dropdown-content a:hover {
+    color: green !important; /* Green on hover for dropdown items */
+}
+
+/* Optional: Ensure the dropdown button itself follows the same color scheme */
+.nav-menu.navbar .dropbtn {
+    color: black !important; /* Default color for dropdown button */
+}
+
+.nav-menu.navbar .dropbtn:hover {
+    color: green !important; /* Green on hover for dropdown button */
+}
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  right: 15px;
+  bottom: 15px;
+  background: #57884d !important;
+  color: #fff !important;
+  transition: display 0.5s ease-in-out !important;
+  z-index: 99999 !important;
+}
+
+.back-to-top i {
+  font-size: 24px !important;
+  position: absolute !important;
+  top: 8px !important;
+  left: 8px !important;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #1ed054 !important;
+  transition: background 0.2s ease-in-out !important;
+}
+      </style>
+      
+      <nav class="nav-menu d-none d-lg-block navbar">
+        <ul id="old">
+<li><a href="index.html">Home</a></li>
+  <li><a href="About IIITK.html">About IIITK</a></li>
+  <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+    <div class="dropdown">
+      <button class="dropbtn" style="font-weight: 700;">Committee <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="Scientific Advisory.html">Scientific Advisory Committee</a>
+        <a href="committee.html">Organizing Committee</a>
+      </div>
+    </div>
+  </li>
+  <li class="active"><a href="speakers.html">Keynote Talks</a></li>
+  <li><a href="callforpapers.html">Call For Papers</a></li>
+  <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+    <div class="dropdown">
+      <button class="dropbtn" style="font-weight: 700;">Special-Session <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="workshop.html">Call for Workshops</a>
+        <a href="tutorials.html">Call for Tutorials</a>
+      </div>
+    </div>
+  </li>
+  <li><a href="imp-dates.html">Important Dates</a></li>
+  <li><a href="schedule.html">Schedule</a></li>
+  <li><a href="registration.html">Registration</a></li>
+  <li><a href="sponsor.html">Sponsorship</a></li>
+
+  <!-- Moved Archives tab here -->
+  <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+    <div class="dropdown">
+      <button class="dropbtn" style="font-weight: 700;">previous Conferences<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="./SPELLL2024/index.html" target="_blank">SPELLL 2024</a>
+        <a href="./proceedings_2024.html" target="_blank">Proceedings of SPELLL 2024</a>
+        <a href="https://spelll.org/SPELLL2023/index.html" target="_blank">SPELLL 2023</a>
+        <a href="https://link.springer.com/book/9783031584947" target="_blank">Proceedings of SPELLL 2023</a>
+        <a href="https://spelll.org/SPELLL2023/SPELLL2022/index.html" target="_blank">SPELLL 2022</a>
+        <a href="https://link.springer.com/book/10.1007/978-3-031-33231-9" target="_blank">Proceedings of SPELLL 2022</a>
+      </div>
+    </div>
+  </li>
+
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero" style="height: 60vh; position: relative; overflow: hidden;">
+  <!-- Background Image -->
+  <div style="
+    background: url('./assets/img/iiit4-re.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+  "></div>
+
+  <!-- Overlay -->
+  <div style="
+    background: rgba(0, 0, 0, 0.5); /* dark overlay */
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 2;
+  "></div>
+
+  <!-- Text Content -->
+  <div class="hero-container" data-aos="fade-up" style="position: relative; z-index: 3; text-align: center; color: white;">
+    <h1 style="font-family: 'Times New Roman', Times, serif;font-weight: 300;">Welcome to SPELLL 2025</h1><br>
+    <h2 style="font-family: 'Times New Roman', Times, serif;font-weight: 300;">
+      FOURTH INTERNATIONAL CONFERENCE ON  <br> SPEECH AND LANGUAGE TECHNOLOGIES FOR LOW-RESOURCE LANGUAGES 
+    </h2><br>
+    <h2 style="font-family: 'Times New Roman', Times, serif;font-weight: 300;">December 18-20, 2025 - (Hybrid Mode)</h2><br>
+    <h2 style="font-family: 'Times New Roman', Times, serif;font-weight: 300;">Indian Institute of Information Technology (IIIT), Kottayam, INDIA</h2>
+  </div>
+</section>
+<br/>
+<!-- End Hero -->
+  
+    <!-- Keynote Talks 2025 Section -->
+    <br/>
+    <section id="speakers" class="speakers"> 
+      <div class="container">
+        <div class="keynote-section" data-aos="fade-up">
+          <h2>KEYNOTE TALKS 2025</h2>
+          <div class="speakers-row">
+            <!-- Placeholder Speaker 4 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./assets/img/Dr Ekaterina Vylomova.jpeg" alt="Dr Ekaterina Vylomova">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://findanexpert.unimelb.edu.au/profile/738094-ekaterina-vylomova" target="_blank">Ekaterina Vylomova</a></h3>
+                  <p>School of Computing and Information Systems,</p>
+                  <p>The University of Melbourne, Victoria, Australia</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Placeholder Speaker 2 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./assets/img/Prof. Flammie Pirinen.jpeg" alt="Prof. Flammie Pirinen">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://en.uit.no/ansatte/person?p_document_id=682451&p_dimension_id=210121#tab-item-4" target="_blank">Flammie Pirinen</a></h3>
+                  <p>Department of Language and Culture,</p>
+                  <p>UiT The Arctic University of Norway, Troms, Norway</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- New Speaker -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./assets/img/kurtmicallef.jpeg" alt="Mr Kurt Micallef">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://www.um.edu.mt/profile/kurtmicallef" target="_blank">Kurt Micallef</a></h3>
+                  <p>Artificial Intelligence
+                    Faculty of Information & Communication Technology,</p>
+                  <p>University of Malta, Msida</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Placeholder Speaker 1 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./assets/img/prof ming li.jpg" alt="Prof. Ming Li">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://sites.duke.edu/dkusmiip/" target="_blank">Ming Li</a></h3>
+                  <p>Electronical and Computer Engineering,</p>
+                  <p>Digital Innovation Research Center, Duke Kunshan University, China</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- New Speaker Card -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./assets/img/shuly wintner.webp" alt="Shuly Wintner">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://cris.haifa.ac.il/en/persons/shuly-wintner" target="_blank">Shuly Wintner</a></h3>
+                  <p>Department of Computer Science,</p>
+                  <p>University of Haifa, Isreal</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Placeholder Speaker 3 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./assets/img/Dr Simon Ostermann.png" alt="Dr Simon Ostermann">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://simonost.github.io/home/" target="_blank">Simon Ostermann</a></h3>
+                  <p>German Research Center for Artificial Intelligence (DFKI),</p>
+                  <p>Kaiserslautern, Germany</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Placeholder Speaker 5 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./assets/img/Dr Tanmoy Chakraborty.png" alt="Dr Tanmoy Chakraborty">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://tanmoychak.com/" target="_blank">Tanmoy Chakraborty</a></h3>
+                  <p>Department of Electrical Engineering (Computer Technology Group)</p>
+                  <p>Indian Institute of Technology Delhi (IIT Delhi), India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keynote Talks 2024 Section -->
+    <section id="speakers-2024" class="speakers"> 
+      <div class="container">
+        <div class="keynote-section" data-aos="fade-up">
+          <h2>KEYNOTE TALKS 2024</h2>
+          
+          <div class="speakers-row">
+            <!-- Speaker 1 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="assets/img/speakers/paolo rosso.jpeg" alt="Paolo Rosso">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://personales.upv.es/prosso/" target="_blank">Paolo Rosso</a></h3>
+                  <p>Department of Computer Systems and Computation</p>
+                  <p>Universitat Politècnica de València, Spain</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 2 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="assets/img/Speakers 2024/iliamarkov.jpg" alt="Ilia Markov">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://research.vu.nl/en/persons/ilia-markov"  target="_blank">Ilia Markov</a></h3>
+                  <p>Computational Linguistics & Text Mining Lab (CLTL)</p>
+                  <p>Vrije Universiteit Amsterdam</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 3 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="/api/placeholder/400/400" alt="A Seza Doğruöz">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://lt3.ugent.be/people/as-dogruoz/"  target="_blank">A Seza Doğruöz</a></h3>
+                  <p>Department of Translation, Interpreting and Communication</p>
+                  <p>Ghent University, Belgium</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 4 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="assets/img/Speakers 2024/Doris Dippold-6534.jpg" alt="Doris Dippold">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://www.surrey.ac.uk/people/doris-dippold"  target="_blank">Doris Dippold</a></h3>
+                  <p>School of Literature and Languages</p>
+                  <p>University of Surrey, UK</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 5 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="assets/img/Speakers 2024/sudip kumar.jpg" alt="Sudip Kumar Naskar">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="#"  target="_blank">Sudip Kumar Naskar</a></h3>
+                  <p>Computer Science & Engineering Department</p>
+                  <p>Jadavpur University, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keynote Talks 2023 Section -->
+    <section id="speakers-2023" class="speakers"> 
+      <div class="container">
+        <div class="keynote-section" data-aos="fade-up">
+          <h2>KEYNOTE TALKS 2023</h2>
+          
+          <div class="speakers-row">
+            <!-- Speaker 1 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="speakers/Steffen Eger.png" alt="Steffen Eger">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://steffeneger.github.io/"  target="_blank">Steffen Eger</a></h3>
+                  <p>Natural Language Learning Group (NLLG)</p>
+                  <p>Bielefeld University, Germany</p>
+                  <p><em>Low-resource Text Generation and Evaluation</em></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 2 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="speakers/Genta Indira Winata.png" alt="Genta Indira Winata">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://gentawinata.com/"  target="_blank">Genta Indra Winata</a></h3>
+                  <p>Bloomberg LP</p>
+                  <p>New York, United States</p>
+                  <p><em>Benchmarking Language Models on Underrepresented Languages</em></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 3 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="speakers/Kaja Dobrovoljc.png" alt="Kaja Dobrovoljc">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://www.ff.uni-lj.si/en/staff/kaja-dobrovoljc"  target="_blank">Kaja Dobrovoljc</a></h3>
+                  <p>Department of Translation Studies</p>
+                  <p>Univerza v Ljubljani, Slovenia</p>
+                  <p><em>Advantages and challenges of cross-lingually harmonized spoken data annotation</em></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 4 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="speakers/Endang Wahyu Pamungkas.png" alt="Endang Wahyu Pamungkas">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://www.ums.ac.id/profile/endang-wahyu-pamungkas"  target="_blank">Endang Wahyu Pamungkas</a></h3>
+                  <p>Universitas Muhammadiyah Surakarta</p>
+                  <p>Indonesia</p>
+                  <p><em>Hate Speech Detection in Low-Resourced Indonesian: Challenges and Opportunities</em></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 5 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="speakers/Manex Aguirrezabal Zabaleta.png" alt="Manex Aguirrezabal Zabaleta">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://nors.ku.dk/english/staff/?pure=en/persons/595798"  target="_blank">Manex Aguirrezabal Zabaleta</a></h3>
+                  <p>Department of Nordic Studies and Linguistics</p>
+                  <p>University of Copenhagen, Denmark</p>
+                  <p><em>Computational models for poetry generation and automatic analysis</em></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 6 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="speakers/Radhika.png" alt="Radhika Mamidi">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://www.iiit.ac.in/people/faculty/radhikamamidi/"  target="_blank">Radhika Mamidi</a></h3>
+                  <p>International Institute of Information Technology</p>
+                  <p>Hyderabad, India</p>
+                  <p><em>Dialog System</em></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 7 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="speakers/Parameswari.png" alt="Parameswari Krishnamurthy">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://www.iiit.ac.in/people/faculty/Parameswari/"  target="_blank">Parameswari Krishnamurthy</a></h3>
+                  <p>International Institute of Information Technology</p>
+                  <p>Hyderabad, India</p>
+                  <p><em>Domain Adaptation in building neural machine translation: A Linguistic Enquiry</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keynote Talks 2022 Section -->
+    <section id="speakers-2022" class="speakers"> 
+      <div class="container">
+        <div class="keynote-section" data-aos="fade-up">
+          <h2>KEYNOTE TALKS 2022</h2>
+          
+          <div class="speakers-row">
+            <!-- Speaker 1 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./speakers/deepak.png" alt="Deepak Padmanabhan">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://pure.qub.ac.uk/en/persons/deepak-padmanabhan" target="_blank">Deepak Padmanabhan</a></h3>
+                  <p>Queens University-Belfast,</p>
+                  <p>United Kingdom</p>
+                  <p><em>Fairness and Ethics in ML</em></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 2 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./speakers/Gihan-Dias.jpg" alt="Dias P.G.V.">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://uom.lk/staff/Dias.PGV" target="_blank">Dias P.G.V.</a></h3>
+                  <p>University of Moratuwa,</p>
+                  <p>Sri Lanka</p>
+                  <p><em>Creation of Datasets for Training Language Models for Low-Resource Languages</em></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 3 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./speakers/kalikabali.png" alt="Kalika Bali">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://www.microsoft.com/en-us/research/people/kalikab/" target="_blank">Kalika Bali</a></h3>
+                  <p>Principal Researcher,</p>
+                  <p>Microsoft Research India</p>
+                  <p><em>Building Technology for Low Resource Languages : Lessons Learnt</em></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 4 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./speakers/scannell.jpeg" alt="Kevin Patrick Scannell">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://cs.slu.edu/~scannell/" target="_blank">Kevin Patrick Scannell</a></h3>
+                  <p>Saint Louis University,</p>
+                  <p>United States of America</p>
+                  <p><em>20 Years a' Growing: The Past, Present, and Future of Irish NLP</em></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 5 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./speakers/miguel.jpeg" alt="Miguel Ángel García Cumbreras">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://www.ujaen.es/departamentos/dinformatica/contactos/garcia-cumbreras-miguel-angel" target="_blank">Miguel Ángel García Cumbreras</a></h3>
+                  <p>Universidad de Jaén,</p>
+                  <p>Spain</p>
+                  <p><em>Corpus compilation for NLP shared tasks: the Spanish case</em></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 6 -->
+            <div class="speaker-column">
+              <div class="speaker-card">
+                <div class="speaker-img">
+                  <div class="speaker-img-container">
+                    <img src="./speakers/Salud.jpg" alt="Salud María Jiménez Zafra">
+                  </div>
+                </div>
+                <div class="speaker-info">
+                  <h3 class="ts-title"><a href="https://www.ujaen.es/departamentos/dinformatica/contactos/jimenez-zafra-salud-maria" target="_blank">Salud María Jiménez Zafra</a></h3>
+                  <p>Universidad de Jaén,</p>
+                  <p>Spain</p>
+                  <p><em>Corpus compilation for NLP shared tasks: the Spanish case</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+ <footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <!-- Venue Section -->
+        <div class="col-lg-6 col-md-6 venue-container">
+          <div class="venue-info">
+            <h4>Conference Venue</h4>
+            <div class="venue-address">
+              <p>
+                Indian Institute of Information Technology - Kottayam,<br>
+                Valavoor.P.O − Pala,<br> 
+                Kottayam  − 686635,<br>
+                Kerala, INDIA
+              </p>
+              <div class="gmaps-link">
+                <a href="https://www.google.com/maps/place/Indian+Institute+of+Information+Technology+(IIIT)+Kottayam/@9.7552146,76.647477,17z/data=!3m1!4b1!4m6!3m5!1s0x3b07ce23bc170053:0x8757971e61eb21dd!8m2!3d9.7552146!4d76.6500519!16s%2Fg%2F11btxcz4c7?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D" 
+                   target="_blank" style="color:#95e600">
+                  <i class="icofont-location-pin"></i> View on Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <!-- Social Media Section (IIITK and SPELLL) -->
+        <div class="col-lg-6 col-md-6 footer-newsletter">
+          <h4>Social Media Links</h4>
+          
+          <!-- IIITK Social Media Links -->
+          <div class="social-links">
+            <a href="https://twitter.com/IIITKKottayam" class="x-logo" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                </a>
+                <a href="https://www.facebook.com/IIITKottayamofficial/" class="facebook" target="_blank"><i class="icofont-facebook"></i></a>
+                <a href="https://www.instagram.com/iiitkottayam/" class="instagram" target="_blank"><i class="icofont-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UC3jrKDXjl7_c5bld5x8C1vw" class="youtube" target="_blank"><i class="icofont-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/iiit-kottayam" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a>
+            </div>
+
+            <!-- SPELLL Social Media Links -->
+            <h4 style="margin-top: 20px;">SPELLL Social Media</h4>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/spelll-conference/" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+  <div class="container">
+    <div class="copyright">
+      © Copyright <strong><span>IIITK</span></strong>. All Rights Reserved
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

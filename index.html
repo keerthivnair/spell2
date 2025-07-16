@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SPELLL 2025 :: WELCOME PAGE</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <meta property="og:site_name" content="SPELLL 2025">
+  
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Bootstrap CDN for better compatibility -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SPELLL 2025",
+  "url": "https://spelll.org",
+  "alternateName": "International Conference on Speech and Language Technologies for Low-Resource Languages 2025"
+}
+</script>
+  <!-- Countdown Timer Styles -->
+  <style>
+    /* Countdown Timer Section */
+    #countdown {
+      background: linear-gradient(135deg, #1B4332);
+      padding: 60px 0 40px;
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin-top: -5px;
+    }
+    
+    #countdown::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, #3498db, #e74c3c, #3498db);
+    }
+    
+    .countdown-title {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 15px;
+    }
+    
+    .countdown-title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background: #e74c3c;
+      border-radius: 2px;
+    }
+    
+    .timer-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .timer-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 120px;
+      height: 100px; /* Added to ensure consistent height */
+      justify-content: center; /* Center content vertically */
+    }
+    
+    .timer-value {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1.2; /* Adjusted for better vertical alignment */
+      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 10px;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      align-items: center; /* Ensure numbers are vertically centered */
+      justify-content: center;
+    }
+    
+    .timer-label {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.9;
+      margin-top: 5px; /* Added to space from value */
+    }
+    
+    /* Separator between time units */
+    .timer-separator {
+      display: flex;
+      align-items: center;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #e74c3c;
+      margin: 0 -10px;
+      height: 100px; /* Match timer-unit height */
+      justify-content: center; /* Center vertically */
+    }
+
+    /* Image Gallery Section */
+    .venue-gallery {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      padding: 60px 0;
+      margin: 40px 0;
+    }
+
+    .gallery-title {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #1B4332;
+      font-size: 2.5rem;
+      font-weight: 600;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    .gallery-title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 4px;
+      background: linear-gradient(90deg, #3498db, #e74c3c);
+      border-radius: 2px;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .image-card {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+      background: white;
+    }
+
+    .image-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .image-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .image-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      color: white;
+      padding: 20px;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .image-card:hover .image-overlay {
+      transform: translateY(0);
+    }
+
+    .image-overlay h4 {
+      margin: 0 0 5px 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .image-overlay p {
+      margin: 0;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    /* Large featured image */
+    .image-card.featured {
+      grid-column: span 2;
+    }
+
+    .image-card.featured img {
+      height: 300px;
+    }
+
+    /* Image Banner Styles */
+    .image-banner {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+      background-color: white; /* Changed from #f8f9fa to white */
+      margin-bottom: 10px; /* Reduced from 20px to 10px for less space */
+    }
+
+    .image-banner img {
+      max-width: 30%;
+      height: auto;
+      object-fit: contain;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .timer-container {
+        gap: 10px;
+      }
+      
+      .timer-unit {
+        min-width: 80px;
+        height: 80px; /* Adjusted for smaller screens */
+      }
+      
+      .timer-value {
+        font-size: 2.5rem;
+      }
+      
+      .timer-label {
+        font-size: 1rem;
+      }
+      
+      .timer-separator {
+        font-size: 2.2rem;
+        margin: 0 -5px;
+        height: 80px; /* Adjusted for smaller screens */
+      }
+
+      .image-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 15px;
+      }
+
+      .image-card.featured {
+        grid-column: span 1;
+      }
+
+      .image-card img {
+        height: 200px;
+      }
+
+      .image-card.featured img {
+        height: 220px;
+      }
+
+      .gallery-title {
+        font-size: 2rem;
+      }
+
+      .venue-gallery {
+        padding: 40px 0;
+      }
+
+      .image-banner {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-banner img {
+        max-width: 80%;
+        margin-bottom: 10px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .timer-container {
+        gap: 5px;
+      }
+      
+      .timer-unit {
+        min-width: 65px;
+        height: 70px; /* Adjusted for smaller screens */
+      }
+      
+      .timer-value {
+        font-size: 2rem;
+      }
+      
+      .timer-label {
+        font-size: 0.85rem;
+      }
+      
+      .timer-separator {
+        font-size: 1.8rem;
+        height: 70px; /* Adjusted for smaller screens */
+      }
+      
+      .countdown-title {
+        font-size: 1.8rem;
+      }
+
+      .image-card img {
+        height: 180px;
+      }
+
+      .image-card.featured img {
+        height: 200px;
+      }
+
+      .gallery-title {
+        font-size: 1.7rem;
+      }
+    }
+
+    .center-div {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .logo-size {
+      width: 250px;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    /* Enhanced CSS to Remove Lines from Navbar */
+    #header .nav-menu.navbar ul li,
+    #header .nav-menu.navbar ul li a,
+    #header .nav-menu.navbar ul li .dropbtn,
+    #header .nav-menu.navbar ul li .dropdown-content a {
+      text-decoration: none !important;
+      border: none !important;
+      border-bottom: none !important;
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+    }
+
+    #header .nav-menu.navbar ul li:hover,
+    #header .nav-menu.navbar ul li a:hover,
+    #header .nav-menu.navbar ul li .dropbtn:hover,
+    #header .nav-menu.navbar ul li .dropdown-content a:hover,
+    #header .nav-menu.navbar ul li.active a,
+    #header .nav-menu.navbar ul li.active .dropbtn,
+    #header .nav-menu.navbar ul li a:focus,
+    #header .nav-menu.navbar ul li .dropbtn:focus {
+      text-decoration: none !important;
+      border: none !important;
+      border-bottom: none !important;
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+    }
+
+    #header .nav-menu.navbar ul li::before,
+    #header .nav-menu.navbar ul li::after,
+    #header .nav-menu.navbar ul li a::before,
+    #header .nav-menu.navbar ul li a::after,
+    #header .nav-menu.navbar ul li .dropbtn::before,
+    #header .nav-menu.navbar ul li .dropbtn::after,
+    #header .nav-menu.navbar ul li .dropdown-content a::before,
+    #header .nav-menu.navbar ul li .dropdown-content a::after {
+      display: none !important;
+      content: none !important;
+      border: none !important;
+    }
+
+    /* Navbar Colors */
+    #header .nav-menu.navbar ul li a,
+    #header .nav-menu.navbar ul li .dropbtn {
+      color: black !important;
+      transition: color 0.3s ease;
+    }
+
+    #header .nav-menu.navbar ul li a:hover,
+    #header .nav-menu.navbar ul li .dropbtn:hover {
+      color: green !important;
+    }
+
+    #header .nav-menu.navbar ul li.active a,
+    #header .nav-menu.navbar ul li.active .dropbtn {
+      color: green !important;
+    }
+
+    #header .nav-menu.navbar ul li .dropdown-content a {
+      color: black !important;
+    }
+
+    #header .nav-menu.navbar ul li .dropdown-content a:hover {
+      color: green !important;
+    }
+
+    /* Desktop Dropdown Styling */
+    @media (min-width: 992px) {
+      #header .nav-menu.navbar ul li .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 200px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        border-radius: 5px;
+        top: 100%;
+        left: 0;
+      }
+
+      #header .nav-menu.navbar ul li .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    }
+
+    /* Remove underline from footer links */
+    #footer a {
+      text-decoration: none !important;
+      border-bottom: none !important;
+      color: inherit;
+    }
+
+    #footer a:hover,
+    #footer a:focus,
+    #footer a:active {
+      text-decoration: none !important;
+      border-bottom: none !important;
+      outline: none !important;
+    }
+
+  .back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  right: 15px;
+  bottom: 15px;
+  background: #57884d !important;
+  color: #fff !important;
+  transition: display 0.5s ease-in-out !important;
+  z-index: 99999 !important;
+}
+
+.back-to-top i {
+  font-size: 24px !important;
+  position: absolute !important;
+  top: 8px !important;
+  left: 8px !important;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #1ed054 !important;
+  transition: background 0.2s ease-in-out !important;
+}
+
+    /* Announcement Scroller Styles */
+    .announcement-scroller {
+      background-color: white;
+      padding: 0;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 60px;
+      border: 1px solid #ddd;
+    }
+
+    .announcement-scroller::before {
+      display: none; /* Remove grey overlay */
+    }
+
+    .announcement-box,
+    .announcement-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .announcement-box {
+      background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+      color: white;
+      padding: 0 25px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      min-width: 200px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .announcement-box::before {
+      content: "📢";
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    .announcement-box::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -10px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid #20c997;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+    }
+
+    .announcement-content {
+      flex: 1;
+      background: white;
+      padding: 0 20px;
+      color: #d32f2f;
+      font-size: 16px;
+      font-weight: 500;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .announcement-content ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .announcement-content li {
+      display: none; /* Hide all items initially */
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+
+    .announcement-content .active {
+      display: block; /* Only the active item is visible */
+      animation: none; /* Remove scroll animation */
+    }
+
+    .announcement-content a {
+      color: #d32f2f;
+      text-decoration: underline;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .announcement-content a:hover {
+      color: #b71c1c;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .announcement-scroller {
+        height: 50px;
+        margin: 10px 0;
+      }
+
+      .announcement-box {
+        min-width: 150px;
+        height: 50px;
+        font-size: 14px;
+        padding: 0 15px;
+      }
+
+      .announcement-box::before {
+        font-size: 16px;
+        margin-right: 8px;
+      }
+
+      .announcement-content {
+        font-size: 14px;
+        height: 50px;
+        padding: 0 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .announcement-scroller {
+        height: 45px;
+      }
+
+      .announcement-box {
+        min-width: 120px;
+        height: 45px;
+        font-size: 12px;
+        padding: 0 10px;
+      }
+
+      .announcement-box::before {
+        font-size: 14px;
+        margin-right: 5px;
+      }
+
+      .announcement-content {
+        font-size: 13px;
+        height: 45px;
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="d-flex">
+      <div class="logo mr-auto">
+        <a href="index.html"><img src="assets\img\logo\logo IIITK.jpg"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block navbar">
+        <ul id="old">
+  <li class="active"><a href="index.html">Home</a></li>
+  <li><a href="About IIITK.html">About IIITK</a></li>
+  <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+    <div class="dropdown">
+      <button class="dropbtn" style="font-weight: 700;">Committee <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="Scientific Advisory.html">Scientific Advisory Committee</a>
+        <a href="committee.html">Organizing Committee</a>
+      </div>
+    </div>
+  </li>
+  <li><a href="speakers.html">Keynote Talks</a></li>
+  <li><a href="callforpapers.html">Call For Papers</a></li>
+  <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+    <div class="dropdown">
+      <button class="dropbtn" style="font-weight: 700;">Special-Session <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="workshop.html">Call for Workshops</a>
+        <a href="tutorials.html">Call for Tutorials</a>
+      </div>
+    </div>
+  </li>
+  <li><a href="imp-dates.html">Important Dates</a></li>
+  <li><a href="schedule.html">Schedule</a></li>
+  <li><a href="registration.html">Registration</a></li>
+  <li><a href="sponsor.html">Sponsorship</a></li>
+
+  <!-- Moved Archives tab here -->
+  <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+    <div class="dropdown">
+      <button class="dropbtn" style="font-weight: 700;">Previous Conferences<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="./SPELLL2024/index.html" target="_blank">SPELLL 2024</a>
+        <a href="./proceedings_2024.html" target="_blank">Proceedings of SPELLL 2024</a>
+        <a href="https://spelll.org/SPELLL2023/index.html" target="_blank">SPELLL 2023</a>
+        <a href="https://link.springer.com/book/9783031584947" target="_blank">Proceedings of SPELLL 2023</a>
+        <a href="https://spelll.org/SPELLL2023/SPELLL2022/index.html" target="_blank">SPELLL 2022</a>
+        <a href="https://link.springer.com/book/10.1007/978-3-031-33231-9" target="_blank">Proceedings of SPELLL 2022</a>
+      </div>
+    </div>
+  </li>
+
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" style="height: 60vh; position: relative; overflow: hidden;">
+    <div style="
+      background: url('./assets/img/iiit4-re.png') no-repeat center center/cover;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 1;
+    "></div>
+
+    <div style="
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 2;
+    "></div>
+
+    <div class="hero-container" data-aos="fade-up" style="position: relative; z-index: 3; text-align: center; color: white;">
+      <br/><br/><br/>
+      <h1 style="font-family: 'Times New Roman', Times, serif;">Welcome to SPELLL 2025</h1><br>
+      <h2 style="font-family: 'Times New Roman', Times, serif;">
+        FOURTH INTERNATIONAL CONFERENCE ON  <br> SPEECH AND LANGUAGE TECHNOLOGIES FOR LOW-RESOURCE LANGUAGES 
+      </h2><br>
+      <h2 style="font-family: 'Times New Roman', Times, serif;">December 18-20, 2025 - (Hybrid Mode)</h2><br>
+      <h2 style="font-family: 'Times New Roman', Times, serif;">Indian Institute of Information Technology (IIIT), Kottayam, INDIA</h2>
+    </div>
+  </section><!-- End Hero -->
+  
+  <!-- ======= Countdown Timer Section ======= -->
+  <section id="countdown">
+    <div class="container">
+      <h2 class="countdown-title">Conference Countdown</h2>
+      <div class="timer-container">
+        <div class="timer-unit">
+          <div class="timer-value" id="days">192</div>
+          <div class="timer-label">Days</div>
+        </div>
+        
+        <div class="timer-separator">:</div>
+        
+        <div class="timer-unit">
+          <div class="timer-value" id="hours">00</div>
+          <div class="timer-label">Hours</div>
+        </div>
+        
+        <div class="timer-separator">:</div>
+        
+        <div class="timer-unit">
+          <div class="timer-value" id="minutes">00</div>
+          <div class="timer-label">Minutes</div>
+        </div>
+        
+        <div class="timer-separator">:</div>
+        
+        <div class="timer-unit">
+          <div class="timer-value" id="seconds">00</div>
+          <div class="timer-label">Seconds</div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Countdown Timer -->
+
+  <!-- ======= Main Content ======= -->
+  <main id="main">
+    <!-- ======= Announcement Scroller Section ======= -->
+    <section class="announcement-scroller">
+      <div class="announcement-box">Important Notice</div>
+      <div class="announcement-content">
+        <ul class="announcement-content-inner">
+          <li class="announcement-item">Paper submission open till <a href="callforpapers.html" target="_blank">Click here</a> - 20-Aug-2025, 11:59 PM. <img src="./assets/img/new tag.gif" alt="New!" style="vertical-align: middle; height: 60px; margin-left: 5px;"></li>
+        </ul>
+      </div>
+    </section><!-- End Announcement Scroller -->
+
+    <!-- ======= Venue Gallery Section ======= -->
+    <section class="venue-gallery">
+      <div class="container">
+        <h2 class="gallery-title">About Conference Venue</h2>
+        <div class="image-grid">
+          <div class="image-card featured">
+            <img src="./assets/img/iiitk.JPG" alt="IIIT Kottayam Campus" />
+            <div class="image-overlay">
+              <h4>IIIT Kottayam Campus</h4>
+            </div>
+          </div>
+          
+          <div class="image-card">
+            <img src="./assets/img/iiitk hostel.jpeg" alt="IIIT Kottaym Hostels" />
+            <div class="image-overlay">
+              <h4>Hostels</h4>
+            </div>
+          </div>
+          
+          <div class="image-card">
+            <img src="./assets/img/conference hall iiitk.jpg" alt="Conference hall" />
+            <div class="image-overlay">
+              <h4>Conference Hall</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Venue Gallery -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row mt-5 p-4">
+          <!-- Image Banner Section -->
+          <div class="image-banner">
+            <img src="./assets/img/logo/logo IIITK.jpg" alt="Left Image">
+            <img src="./assets/img/logo/spelll.jpg" alt="Middle Image">
+            <img src="./assets/img/logo/springer home page.jpg" alt="Right Image">
+          </div>
+          <p id="old" align="justify"><font color='black' style="list-style-type: disc; margin-left:60px;">
+            <div class="row mt-5 p-4" style="text-align: justify; margin-right: 30px;"> 
+              The SPELLL-2025 conference, scheduled to take place at the Indian Institute of Information Technology (IIIT), Kottayam, Kerala, INDIA
+              on December 18-20, 2025, is poised to be a pivotal event in the field of Speech and Language Technology, especially for low-resource languages.
+              This Fourth edition of the International Conference on Speech & Language Technology for Low-resource Languages (SPELLL) is dedicated to 
+              the advancement and preservation of speech and language data technologies for less commonly used languages, focusing on their integration into the 
+              digital era and utilization in various industries, humanities, and social sciences.   
+              <br>
+              <br>    
+              In a world where internet usage is escalating and most global languages have transitioned smoothly into the digital age, the plight of approximately
+              10000+ languages, especially regional and low-resource ones, is often overlooked. These languages, lacking in technological development,
+              face the imminent threat of extinction.
+              SPELLL-2025 aims to counter this by congregating researchers worldwide who specialize in these low-resourced and minority languages. The goal is to foster the development of 
+              speech and language technologies to preserve the linguistic and cultural heritage of these languages.
+            </font></p> 
+            <div class="row mt-2 p-4"> 
+              <p id="old" style="font-size: 20px;" style="padding:2%;"><font color="green">Key Objectives of SPELLL-2025 include:</font></p> 
+              <p id="old" align="justify"><font color='black'>
+                <ul style="list-style-type: disc; margin-left:60px;">
+                  <li style="padding-left: 10px;">Exploring challenges in creating speech and language resources for low-resource languages.</li>
+                  <li style="padding-left: 10px;">Advancing research in speech and language technology tailored to these languages.</li>
+                  <li style="padding-left: 10px;">Developing and implementing appropriate language technology models for low-resource languages.</li>
+                  <li style="padding-left: 10px;">Encouraging the integration of multimodal and generative technologies to Enhance NLP capabilities.</li>
+                  <li style="padding-left: 10px;">Creating a collaborative platform for researchers from low-resource language communities around the globe.</li>
+                  <li style="padding-left: 10px;">Establishing and ensuring ethical research and development practices that guarantee unbiased and fair outcomes.</li>
+                </ul>
+                <p id="old" align="justify"><font color='black' style="list-style-type: disc; margin-left:60px;">
+                  <div class="row mt-0 p-2">
+                    By focusing on these areas, SPELLL-2025 aspires not only to preserve the world's linguistic diversity but also to ensure the growth of low-resource languages in the digital era. The integration of cutting-edge NLP and speech technologies is seen as crucial in this conference as it represents an essential contribution to academic research, technological innovation, and cultural preservation efforts, aiming to secure the relevance and importance of the world's linguistic heritage in an increasingly digital future.
+                  </font></p>
+            </div>
+           
+          <div class="row mt-5 p-4">
+            <p id="old" style="font-size: 20px;" style="padding:2%;"><font color="Green">COLLABORATORS:</font><br><br>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 mb-3">
+                    <img src="assets/img/logo/insight-logo.jpeg" class="img-fluid logo-size" alt="Insight Data Centre">
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <img src="assets/img/logo/nitk-logo.png" class="img-fluid logo-size" alt="NITK-Surathkal">
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <img src="assets/img/logo/galway_logo.png" class="img-fluid logo-size" alt="Galway">
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <img src="assets/img/logo/SRM_logo.png" class="img-fluid logo-size" alt="SRM Chennai">
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <img src="assets/img/logo/ssnLogo.jpg" class="img-fluid logo-size" alt="SSN">
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <img src="assets/img/logo/Spain_logo.jpeg" class="img-fluid logo-size" alt="Spain Logo">
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <img src="./assets/img/logo/university of surrey.jpg" class="img-fluid logo-size" alt="University of Surrey Logo">
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <img src="./assets/img/logo/potamu research ltd.png" class="img-fluid logo-size" alt="Potamu Research Ltd.">
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <img src="./assets/img/logo/vit_logo.png" class="img-fluid logo-size" alt="VIT-Chennai logo">
+                  </div>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 venue-container">
+            <div class="venue-info">
+              <h4>Conference Venue</h4>
+              <div class="venue-address">
+                <p>
+                  Indian Institute of Information Technology - Kottayam,<br>
+                  Valavoor.P.O − Pala,<br> 
+                  Kottayam  − 686635,<br>
+                  Kerala, INDIA
+                </p>
+                <div class="gmaps-link">
+                  <a href="https://www.google.com/maps/place/Indian+Institute+of+Information+Technology+(IIIT)+Kottayam/@9.7552146,76.647477,17z/data=!3m1!4b1!4m6!3m5!1s0x3b07ce23bc170053:0x8757971e61eb21dd!8m2!3d9.7552146!4d76.6500519!16s%2Fg%2F11btxcz4c7?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D" 
+                     target="_blank" style="color:#95e600">
+                    <i class="icofont-location-pin"></i> View on Google Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 footer-newsletter">
+            <h4>Social Media Links</h4>
+            <div class="social-links">
+              <a href="https://twitter.com/IIITKKottayam" class="x-logo" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/IIITKottayamofficial/" class="facebook" target="_blank"><i class="icofont-facebook"></i></a>
+              <a href="https://www.instagram.com/iiitkottayam/" class="instagram" target="_blank"><i class="icofont-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UC3jrKDXjl7_c5bld5x8C1vw" class="youtube" target="_blank"><i class="icofont-youtube"></i></a>
+              <a href="https://www.linkedin.com/in/iiit-kottayam" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a>
+            </div>
+
+            <h4 style="margin-top: 20px;">SPELLL Social Media</h4>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/spelll-conference/" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        © Copyright <strong><span>IIITK</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+  <!-- Countdown Timer Script -->
+  <script>
+    const countDownDate = new Date("Dec 18, 2025 09:00:00").getTime();
+    const countdownFunction = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+      document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+      document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+      if (distance < 0) {
+        clearInterval(countdownFunction);
+        document.getElementById("days").innerHTML = "0";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+      }
+    }, 1000);
+  </script>
+
+  <!-- Announcement Scroller Script -->
+  <script>
+    const items = document.querySelectorAll('.announcement-item');
+    let index = 0;
+
+    function showNextItem() {
+      // Remove active class from all items
+      items.forEach(item => item.classList.remove('active'));
+      // Add active class to the current item
+      items[index].classList.add('active');
+
+      // Move to next item, or reset to 0 if at the end
+      index = (index + 1) % items.length;
+
+      // Schedule the next item after the animation duration
+      setTimeout(showNextItem, 5000); // 5s delay for quicker cycling
+    }
+
+    // Start the cycle
+    showNextItem();
+  </script>
+</body>
+</html>
