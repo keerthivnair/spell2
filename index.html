@@ -569,6 +569,7 @@
       display: flex;
       align-items: center;
       position: relative;
+      text-align: left; /* Changed from center to left */
     }
 
     .announcement-content ul {
@@ -577,14 +578,14 @@
       padding: 0;
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start; /* Changed from center to flex-start */
       align-items: center;
     }
 
     .announcement-content li {
       display: none; /* Hide all items initially */
       width: 100%;
-      text-align: center;
+      text-align: left; /* Changed from center to left */
       position: relative;
     }
 
@@ -667,51 +668,50 @@
 
       <nav class="nav-menu d-none d-lg-block navbar">
         <ul id="old">
-  <li class="active"><a href="index.html">Home</a></li>
-  <li><a href="About IIITK.html">About IIITK</a></li>
-  <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
-    <div class="dropdown">
-      <button class="dropbtn" style="font-weight: 700;">Committee <i class="fa fa-caret-down"></i></button>
-      <div class="dropdown-content">
-        <a href="Scientific Advisory.html">Scientific Advisory Committee</a>
-        <a href="committee.html">Organizing Committee</a>
-      </div>
-    </div>
-  </li>
-  <li><a href="speakers.html">Keynote Talks</a></li>
-  <li><a href="callforpapers.html">Call For Papers</a></li>
-  <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
-    <div class="dropdown">
-      <button class="dropbtn" style="font-weight: 700;">Special-Session <i class="fa fa-caret-down"></i></button>
-      <div class="dropdown-content">
-        <a href="workshop.html">Call for Workshops</a>
-        <a href="tutorials.html">Call for Tutorials</a>
-      </div>
-    </div>
-  </li>
-  <li><a href="imp-dates.html">Important Dates</a></li>
-  <li><a href="schedule.html">Schedule</a></li>
-  <li><a href="registration.html">Registration</a></li>
-  <li><a href="sponsor.html">Sponsorship</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="About IIITK.html">About IIITK</a></li>
+          <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+            <div class="dropdown">
+              <button class="dropbtn" style="font-weight: 700;">Committee <i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <a href="Scientific Advisory.html">Scientific Advisory Committee</a>
+                <a href="committee.html">Organizing Committee</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="speakers.html">Keynote Talks</a></li>
+          <li><a href="callforpapers.html">Call For Papers</a></li>
+          <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+            <div class="dropdown">
+              <button class="dropbtn" style="font-weight: 700;">Special-Session <i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <a href="workshop.html">Call for Workshops</a>
+                <a href="tutorials.html">Call for Tutorials</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="imp-dates.html">Important Dates</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="sponsor.html">Sponsorship</a></li>
 
-  <!-- Moved Archives tab here -->
-  <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
-    <div class="dropdown">
-      <button class="dropbtn" style="font-weight: 700;">Previous Conferences<i class="fa fa-caret-down"></i></button>
-      <div class="dropdown-content">
-        <a href="./SPELLL2024/index.html" target="_blank">SPELLL 2024</a>
-        <a href="./proceedings_2024.html" target="_blank">Proceedings of SPELLL 2024</a>
-        <a href="https://spelll.org/SPELLL2023/index.html" target="_blank">SPELLL 2023</a>
-        <a href="https://link.springer.com/book/9783031584947" target="_blank">Proceedings of SPELLL 2023</a>
-        <a href="https://spelll.org/SPELLL2023/SPELLL2022/index.html" target="_blank">SPELLL 2022</a>
-        <a href="https://link.springer.com/book/10.1007/978-3-031-33231-9" target="_blank">Proceedings of SPELLL 2022</a>
-      </div>
-    </div>
-  </li>
+          <!-- Moved Archives tab here -->
+          <li style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+            <div class="dropdown">
+              <button class="dropbtn" style="font-weight: 700;">Previous Conferences<i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <a href="./SPELLL2024/index.html" target="_blank">SPELLL 2024</a>
+                <a href="./proceedings_2024.html" target="_blank">Proceedings of SPELLL 2024</a>
+                <a href="https://spelll.org/SPELLL2023/index.html" target="_blank">SPELLL 2023</a>
+                <a href="https://link.springer.com/book/9783031584947" target="_blank">Proceedings of SPELLL 2023</a>
+                <a href="https://spelll.org/SPELLL2023/SPELLL2022/index.html" target="_blank">SPELLL 2022</a>
+                <a href="https://link.springer.com/book/10.1007/978-3-031-33231-9" target="_blank">Proceedings of SPELLL 2022</a>
+              </div>
+            </div>
+          </li>
 
-  <li><a href="contact.html">Contact</a></li>
-</ul>
-
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
@@ -789,35 +789,6 @@
       </div>
     </section><!-- End Announcement Scroller -->
 
-    <!-- ======= Venue Gallery Section ======= -->
-    <section class="venue-gallery">
-      <div class="container">
-        <h2 class="gallery-title">About Conference Venue</h2>
-        <div class="image-grid">
-          <div class="image-card featured">
-            <img src="./assets/img/iiitk.JPG" alt="IIIT Kottayam Campus" />
-            <div class="image-overlay">
-              <h4>IIIT Kottayam Campus</h4>
-            </div>
-          </div>
-          
-          <div class="image-card">
-            <img src="./assets/img/iiitk hostel.jpeg" alt="IIIT Kottaym Hostels" />
-            <div class="image-overlay">
-              <h4>Hostels</h4>
-            </div>
-          </div>
-          
-          <div class="image-card">
-            <img src="./assets/img/conference hall iiitk.jpg" alt="Conference hall" />
-            <div class="image-overlay">
-              <h4>Conference Hall</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Venue Gallery -->
-
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -859,7 +830,33 @@
                     By focusing on these areas, SPELLL-2025 aspires not only to preserve the world's linguistic diversity but also to ensure the growth of low-resource languages in the digital era. The integration of cutting-edge NLP and speech technologies is seen as crucial in this conference as it represents an essential contribution to academic research, technological innovation, and cultural preservation efforts, aiming to secure the relevance and importance of the world's linguistic heritage in an increasingly digital future.
                   </font></p>
             </div>
+          </br>
            
+            <!-- ======= Venue Gallery Section ======= -->
+        <h2 class="gallery-title">About Conference Venue</h2>
+        <div class="image-grid">
+          <div class="image-card featured">
+            <img src="./assets/img/iiitk campus.png" alt="IIIT Kottayam Campus" />
+            <div class="image-overlay">
+              <h4>IIIT Kottayam Campus</h4>
+            </div>
+          </div>
+          
+          <div class="image-card">
+            <img src="./assets/img/iiitk.JPG" alt="IIIT Kottaym Hostels" />
+            <div class="image-overlay">
+              <h4>IIIT Kottayam Campus </h4>
+            </div>
+          </div>
+          
+          <div class="image-card">
+            <img src="./assets/img/conference hall iiitk.jpg" alt="Conference hall" />
+            <div class="image-overlay">
+              <h4>Conference Hall</h4>
+            </div>
+          </div>
+        </div>
+
           <div class="row mt-5 p-4">
             <p id="old" style="font-size: 20px;" style="padding:2%;"><font color="Green">COLLABORATORS:</font><br><br>
               <div class="container">
