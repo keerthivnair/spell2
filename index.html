@@ -581,7 +581,7 @@
   width: 100%;
   gap: 25px;
   white-space: nowrap;
-  animation: scroll-back-forth 20s ease-in-out infinite ;
+  animation: scroll-back-forth 5s ease-in-out infinite alternate ;
 }
 
 .announcement-content li {
@@ -597,6 +597,8 @@
   text-decoration: underline;
   font-weight: 600;
   transition: color 0.5s ease;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .announcement-content a:hover {
@@ -606,10 +608,10 @@
 /* Animation Keyframes */
 @keyframes scroll-back-forth {
   0% {
-    transform: translateX(100%);
+    transform: translateX(-5%);
   }
   100% {
-    transform: translateX(-55%);
+    transform: translateX(5%);
   }
 }
 
@@ -796,26 +798,37 @@
     <ul class="announcement-content-inner">
       <a href="callforpapers.html" target="_blank">
         <li class="announcement-item">
-    <span>
-      Paper submission open till 
-      <!-- <a href="callforpapers.html" target="_blank">Click here</a> -  -->
-      20-Aug-2025, 11:59 PM.
-    </span></a>
+  <span style="font-weight: 600;">Paper submission open till: </span>
+  <span style="color: green;"> 20-Aug-2025, 11:59 PM</span>
+  <img 
+      src="./assets/img/new tag.gif" 
+      alt="New!" 
+      style="vertical-align: middle; height: 60px; margin-left: 5px;"
+    >
+</a>
   
+    
+  </li>
+  <a href="workshop.html" target="_blank"><li class="announcement-item">
+    <span style="font-weight: 600;">Submission deadline for Workshop Proposal: </span>
+    <span style="color: green;"> July 30, 2025</span>
     <img 
       src="./assets/img/new tag.gif" 
       alt="New!" 
       style="vertical-align: middle; height: 60px; margin-left: 5px;"
     >
-  </li>
-  <li class="announcement-item">
-    <span style="font-weight: 600;">Submission deadline for Workshop Proposal: </span>
-    <span style="color: green;"> July 30, 2025</span>
-  </li>
-  <li class="announcement-item">
+  </li></a>
+  
+  <a href="tutorials.html" target="_blank"> <li class="announcement-item">
     <span style="font-weight: 600;">Submission deadline for Tutorial: </span>
     <span style="color: green;"> August 28, 2025</span>
-  </li>
+    <img 
+      src="./assets/img/new tag.gif" 
+      alt="New!" 
+      style="vertical-align: middle; height: 60px; margin-left: 5px;"
+    >
+  </li></a>
+ 
 </ul>
 
   </div>
