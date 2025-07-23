@@ -496,114 +496,123 @@
   transition: background 0.2s ease-in-out !important;
 }
 
-    /* Announcement Scroller Styles */
-    .announcement-scroller {
-      background-color: white;
-      padding: 0;
-      margin: 20px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-      height: 60px;
-      border: 1px solid #ddd;
-    }
+ /* Announcement Scroller Styles */
+.announcement-scroller {
+  background-color: white;
+  padding: 0;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #ddd;
+}
 
-    .announcement-scroller::before {
-      display: none; /* Remove grey overlay */
-    }
+.announcement-scroller::before {
+  display: none;
+}
 
-    .announcement-box,
-    .announcement-content {
-      position: relative;
-      z-index: 2;
-    }
+.announcement-box,
+.announcement-content {
+  position: relative;
+  z-index: 2;
+}
 
-    .announcement-box {
-      background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-      color: white;
-      padding: 0 25px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 16px;
-      min-width: 200px;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      position: relative;
-      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    }
+.announcement-box {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  padding: 0 25px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  min-width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
 
-    .announcement-box::before {
-      content: "📢";
-      margin-right: 10px;
-      font-size: 18px;
-    }
+.announcement-box::before {
+  content: "📢";
+  margin-right: 10px;
+  font-size: 18px;
+}
 
-    .announcement-box::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -10px;
-      width: 0;
-      height: 0;
-      border-left: 10px solid #20c997;
-      border-top: 30px solid transparent;
-      border-bottom: 30px solid transparent;
-    }
+.announcement-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #20c997;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
 
-    .announcement-content {
-      flex: 1;
-      background: white;
-      padding: 0 20px;
-      color: #d32f2f;
-      font-size: 16px;
-      font-weight: 500;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      position: relative;
-      text-align: left; /* Changed from center to left */
-    }
+.announcement-content {
+  flex: 1;
+  width: 100%;
+  background: white;
+  padding: 0 20px;
+  color: #d32f2f;
+  font-size: 16px;
+  font-weight: 500;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+}
 
-    .announcement-content ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      display: flex;
-      justify-content: flex-start; /* Changed from center to flex-start */
-      align-items: center;
-    }
+.announcement-content-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+  white-space: nowrap;
+  animation: scroll-back-forth 20s ease-in-out infinite ;
+}
 
-    .announcement-content li {
-      display: none; /* Hide all items initially */
-      width: 100%;
-      text-align: left; /* Changed from center to left */
-      position: relative;
-    }
+.announcement-content li {
+  display: inline-block;
+  flex-shrink: 0;
+  white-space: nowrap;
+  text-align: left;
+}
 
-    .announcement-content .active {
-      display: block; /* Only the active item is visible */
-      animation: none; /* Remove scroll animation */
-    }
+/* Keep anchor styling */
+.announcement-content a {
+  color: #d32f2f;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.5s ease;
+}
 
-    .announcement-content a {
-      color: #d32f2f;
-      text-decoration: underline;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
+.announcement-content a:hover {
+  color: #b71c1c;
+}
 
-    .announcement-content a:hover {
-      color: #b71c1c;
-    }
+/* Animation Keyframes */
+@keyframes scroll-back-forth {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-55%);
+  }
+}
+
 
     /* Responsive Design */
     @media (max-width: 768px) {
@@ -613,7 +622,7 @@
       }
 
       .announcement-box {
-        min-width: 150px;
+        min-width: 100px;
         height: 50px;
         font-size: 14px;
         padding: 0 15px;
@@ -634,10 +643,11 @@
     @media (max-width: 480px) {
       .announcement-scroller {
         height: 45px;
+       
       }
 
       .announcement-box {
-        min-width: 120px;
+        min-width: 70px;
         height: 45px;
         font-size: 12px;
         padding: 0 10px;
@@ -781,13 +791,36 @@
   <main id="main">
     <!-- ======= Announcement Scroller Section ======= -->
     <section class="announcement-scroller">
-      <div class="announcement-box">Important Notice</div>
-      <div class="announcement-content">
-        <ul class="announcement-content-inner">
-          <li class="announcement-item">Paper submission open till <a href="callforpapers.html" target="_blank">Click here</a> - 20-Aug-2025, 11:59 PM. <img src="./assets/img/new tag.gif" alt="New!" style="vertical-align: middle; height: 60px; margin-left: 5px;"></li>
-        </ul>
-      </div>
-    </section><!-- End Announcement Scroller -->
+  <div class="announcement-box"></div>
+  <div class="announcement-content">
+    <ul class="announcement-content-inner">
+      <a href="callforpapers.html" target="_blank">
+        <li class="announcement-item">
+    <span>
+      Paper submission open till 
+      <!-- <a href="callforpapers.html" target="_blank">Click here</a> -  -->
+      20-Aug-2025, 11:59 PM.
+    </span></a>
+  
+    <img 
+      src="./assets/img/new tag.gif" 
+      alt="New!" 
+      style="vertical-align: middle; height: 60px; margin-left: 5px;"
+    >
+  </li>
+  <li class="announcement-item">
+    <span style="font-weight: 600;">Submission deadline for Workshop Proposal: </span>
+    <span style="color: green;"> July 30, 2025</span>
+  </li>
+  <li class="announcement-item">
+    <span style="font-weight: 600;">Submission deadline for Tutorial: </span>
+    <span style="color: green;"> August 28, 2025</span>
+  </li>
+</ul>
+
+  </div>
+</section>
+<!-- End Announcement Scroller -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -994,7 +1027,7 @@
   </script>
 
   <!-- Announcement Scroller Script -->
-  <script>
+  <!-- <script>
     const items = document.querySelectorAll('.announcement-item');
     let index = 0;
 
@@ -1008,11 +1041,11 @@
       index = (index + 1) % items.length;
 
       // Schedule the next item after the animation duration
-      setTimeout(showNextItem, 5000); // 5s delay for quicker cycling
+      setTimeout(showNextItem, 500); // 5s delay for quicker cycling
     }
 
     // Start the cycle
     showNextItem();
-  </script>
+  </script> -->
 </body>
 </html>
