@@ -137,19 +137,16 @@
     }
 
     /* Image Gallery Section */
-    .venue-gallery {
-      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-      padding: 60px 0;
-      margin: 40px 0;
-    }
-
-    .gallery-title {
-      text-align: center;
-      margin-bottom: 50px;
-      color: #1B4332;
-      font-size: 2.5rem;
-      font-weight: 600;
+      background-color: white;
+      padding: 0; /* keep box tight */
+      margin: 0; /* no extra outer spacing */
+      border-radius: 6px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+      display: flex;
+      align-items: stretch;
       position: relative;
+      width: 100%;
+      border: 1px solid #eee;
       padding-bottom: 20px;
     }
 
@@ -171,20 +168,20 @@
       gap: 20px;
       max-width: 1000px;
       margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .image-card {
-      position: relative;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      transition: all 0.3s ease;
+      flex: 1 1 auto;
+      width: 100%;
       background: white;
-    }
-
-    .image-card:hover {
-      transform: translateY(-5px);
+      padding: 0;
+      color: #d32f2f;
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* distribute equal space */
+      gap: 0;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap; /* keep items on a single line */
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     }
 
@@ -197,14 +194,17 @@
 
     .image-card:hover img {
       transform: scale(1.05);
-    }
-
-    .image-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 10px 12px;
+      flex: 1 1 0; /* equal width */
+      box-sizing: border-box;
+      white-space: nowrap;
+      color: inherit;
       color: white;
       padding: 20px;
       transform: translateY(100%);
@@ -499,57 +499,56 @@
 /* ---------- Announcement Scroller (continuous ticker) ---------- */
 .announcement-scroller {
   background-color: white;
-  padding: 0;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 0; /* tight box */
+  margin: 0; /* no extra outer spacing */
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
   display: flex;
-  align-items: center;
-  overflow: hidden;
+  align-items: center; /* vertical center */
   position: relative;
   width: 100%;
-  height: 60px;
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
 }
 
 .announcement-box {
   background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
   color: white;
-  padding: 0 25px;
-  height: 60px;
+  padding: 6px 10px; /* tighter */
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 16px;
-  min-width: 100px;
+  font-size: 18px;
+  flex: 0 0 56px; /* fixed width left box */
+  height: 56px;
+  min-width: 56px;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  border-radius: 6px 0 0 6px; /* round left corners */
   position: relative;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.08);
 }
 
 .announcement-box::before {
   content: "📢";
-  margin-right: 10px;
-  font-size: 18px;
+  margin: 0;
+  font-size: 20px;
 }
 
 /* content area (the moving part) */
 .announcement-content {
-  flex: 1;
+  flex: 1 1 auto;
   width: 100%;
   background: white;
-  padding: 0 20px;
+  padding: 8px 12px;
   color: #d32f2f;
-  font-size: 16px;
-  font-weight: 500;
-  height: 60px;
+  font-size: 15px;
+  font-weight: 600;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 0;
   position: relative;
   overflow: hidden;
+  white-space: nowrap; /* keep items on a single line */
 }
 
 /* inner wrapper that will be duplicated to make a seamless loop */
@@ -571,12 +570,23 @@
 }
 
 /* link style inside announcements */
-.announcement-content a {
-  color: #d32f2f;
+.announcement-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   text-decoration: none;
-  font-weight: 600;
-  cursor: pointer;
+  font-weight: 700;
+  padding: 6px 8px;
+  flex: 1 1 0; /* equal width */
+  box-sizing: border-box;
+  white-space: nowrap;
+  color: inherit;
 }
+
+.announcement-link.primary { color: #d32f2f; }
+.announcement-link.secondary { color: #d32f2f; }
+.announcement-link:hover { text-decoration: none; opacity: 0.9; }
 
 .announcement-content a:hover { color: #b71c1c; }
 
@@ -593,6 +603,15 @@
   .announcement-box { height: 45px; font-size: 12px; padding: 0 10px; }
   .announcement-content { height: 45px; font-size: 13px; padding: 0 8px; }
   .announcement-content-inner { gap: 25px; }
+}
+
+/* Responsive behavior for announcement links: stack on narrow screens */
+@media (max-width: 780px) {
+  .announcement-scroller { flex-direction: column; align-items: stretch; }
+  .announcement-box { margin: 8px auto; flex: 0 0 auto; width: auto; height: auto; padding: 6px 12px; font-size: 14px; border-radius: 6px; }
+  .announcement-box::before { display: inline-block; }
+  .announcement-content { flex-direction: column; gap: 6px; white-space: normal; padding: 6px 8px; }
+  .announcement-link { justify-content: center; padding: 8px 10px; flex: none; width: 100%; border-right: none; }
 }
   </style>
 </head>
@@ -631,7 +650,7 @@
             </div>
           </li>
           <li><a href="imp-dates.html">Important Dates</a></li>
-          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="schedule.html">Schedule<img src="./assets/img/new tag.gif" height="30%" width="30%"></a></li>
           <li><a href="registration.html">Registration</a></li>
           <li><a href="sponsor.html">Sponsorship</a></li>
 
@@ -723,13 +742,15 @@
     <section class="announcement-scroller">
       <div class="announcement-box"></div>
       <div class="announcement-content">
-        <a href="./assets/SPELLL_Conference Bid Proposal.pdf" target="_blank" class="announcement-single" style="display:flex;align-items:center;gap:16px;color:#d32f2f;font-weight:700;text-decoration:none;">
-          <span style="font-weight:700;color:#d32f2f;font-size:16px;">Call for Bids: SPELLL 2026 and 2027 — Conference Bid Proposal (PDF) <img src="./assets/img/new tag.gif" alt="New!"></span>
+        <a href="schedule.html" class="announcement-link primary" title="Conference schedule">
+          <span style="font-size:16px;">Conference Events and Paper Presentation Schedule</span>
+          <img src="./assets/img/new tag.gif" alt="New!" style="height:32px;">
         </a>
-        <!-- Additional inline announcement -->
-        <a href="callforpapers.html" target="_blank" style="display:inline-flex;align-items:center;gap:12px;margin-left:40px;color:#1a2980;font-weight:700;text-decoration:none;white-space:nowrap;">
-          <span style="font-weight:700;color:#1a2980;font-size:16px;"><a href="./assets/Attendee_Registration.pdf" target="_blank">Registration Open for External Registrants, Deadline 10-Dec-2025, 11:59 IST</a></span>
-          <img src="assets/img/new tag.gif" alt="new tag">
+
+        
+       <a href="./assets/SPELLL_Conference Bid Proposal.pdf" target="_blank" class="announcement-link primary" title="Conference Bid Proposal (PDF)">
+          <span style="font-size:16px;">Call for Bids: SPELLL 2026 and 2027 — Conference Bid Proposal (PDF)</span>
+          <img src="./assets/img/new tag.gif" alt="New!" style="height:32px;">
         </a>
       </div>
 
