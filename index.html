@@ -136,20 +136,6 @@
       justify-content: center; /* Center vertically */
     }
 
-    /* Image Gallery Section */
-      background-color: white;
-      padding: 0; /* keep box tight */
-      margin: 0; /* no extra outer spacing */
-      border-radius: 6px;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
-      display: flex;
-      align-items: stretch;
-      position: relative;
-      width: 100%;
-      border: 1px solid #eee;
-      padding-bottom: 20px;
-    }
-
     .gallery-title::after {
       content: "";
       position: absolute;
@@ -613,7 +599,136 @@
   .announcement-content { flex-direction: column; gap: 6px; white-space: normal; padding: 6px 8px; }
   .announcement-link { justify-content: center; padding: 8px 10px; flex: none; width: 100%; border-right: none; }
 }
-  </style>
+
+.highlights-title {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin: 50px 0 30px;
+  position: relative;
+}
+
+.highlights-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #28a745, #20c997);
+  border-radius: 2px;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 0 15px;
+}
+
+.highlight-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-decoration: none;
+}
+
+.highlight-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fills the box fully */
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+
+
+.highlight-card:hover img {
+  transform: scale(1.08);
+}
+
+.highlight-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.75));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.highlight-card:hover .highlight-overlay {
+  transform: translateY(0);
+}
+
+.highlight-overlay h4 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+
+.highlight-overlay p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+#conferenceHero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.slider-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;   /* keeps FULL image always */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slide.active { opacity: 1; }
+
+.hero-text {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 12px 25px;
+  border-radius: 8px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 4px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -651,7 +766,7 @@
             </div>
           </li>
           <li><a href="imp-dates.html">Important Dates</a></li>
-          <li><a href="schedule.html">Schedule<img src="./assets/img/new tag.gif" height="30%" width="30%"></a></li>
+          <li><a href="schedule.html">Schedule</a></li>
           <li><a href="registration.html">Registration</a></li>
           <li><a href="sponsor.html">Sponsorship</a></li>
 
@@ -677,79 +792,35 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" style="height: 60vh; position: relative; overflow: hidden;">
-    <div style="
-      background: url('./assets/img/iiit4-re.png') no-repeat center center/cover;
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      z-index: 1;
-    "></div>
-
-    <div style="
-      background: rgba(0, 0, 0, 0.5);
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      z-index: 2;
-    "></div>
+   <br><br><br>
+<section id="conferenceHero">
+  <div class="slider-container">
+    <div class="slide active" style="background-image: url('./assets/img/Inaugral ceremony/0Y4A1906.JPG')"></div>
+    <div class="slide" style="background-image: url('./assets/img/Inaugral ceremony/0Y4A2014.JPG')"></div>
+    <div class="slide" style="background-image: url('./assets/img/DAY-1/0Y4A2129.JPG')"></div>
+    <div class="slide" style="background-image: url('./assets/img/DAY-1/0Y4A2381.JPG')"></div>
+    <div class="slide" style="background-image: url('./assets/img/DAY - 2/0Y4A2418.JPG')"></div>
+    <div class="slide" style="background-image: url('./assets/img/Cultural Events/Images/0Y4A3996.JPG')"></div>
+    <div class="slide" style="background-image: url('./assets/img/Cultural Events/Images/0Y4A4241.JPG')"></div>
+    <div class="slide" style="background-image: url('./assets/img/DAY - 3/0Y4A4249.JPG')"></div>
+    <div class="slide" style="background-image: url('./assets/img/DAY - 3/0Y4A4326.JPG')"></div>
+    <div class="slide" style="background-image: url('./assets/img/DAY - 3/0Y4A4476.JPG')"></div>
+    <div class="slide" style="background-image: url('./assets/img/DAY - 3/0Y4A4517.JPG')"></div>
+    <div class="slide" style="background-image: url('./assets/img/Valedictory Ceremony/0Y4A4665.JPG')"></div>
+    <div class="slide" style="background-image: url('./assets/img/Valedictory Ceremony/0Y4A4598.JPG')"></div>
+  </div>
 
     <div class="hero-container" data-aos="fade-up" style="position: relative; z-index: 3; text-align: center; color: white;">
-      <br/><br/><br/>
-      <h1 style="font-family: 'Times New Roman', Times, serif;">Welcome to SPELLL 2025</h1><br>
-      <h2 style="font-family: 'Times New Roman', Times, serif;">
-        FOURTH INTERNATIONAL CONFERENCE ON  <br> SPEECH AND LANGUAGE TECHNOLOGIES FOR LOW-RESOURCE LANGUAGES 
-      </h2><br>
-      <h2 style="font-family: 'Times New Roman', Times, serif;">December 18-20, 2025 - (Hybrid Mode)</h2><br>
-      <h2 style="font-family: 'Times New Roman', Times, serif;">Indian Institute of Information Technology (IIIT), Kottayam, INDIA</h2>
+      
     </div>
   </section><!-- End Hero -->
-  
-  <!-- ======= Countdown Timer Section ======= -->
-  <section id="countdown">
-    <div class="container">
-      <h2 class="countdown-title">Conference Countdown</h2>
-      <div class="timer-container">
-        <div class="timer-unit">
-          <div class="timer-value" id="days">192</div>
-          <div class="timer-label">Days</div>
-        </div>
-        
-        <div class="timer-separator">:</div>
-        
-        <div class="timer-unit">
-          <div class="timer-value" id="hours">00</div>
-          <div class="timer-label">Hours</div>
-        </div>
-        
-        <div class="timer-separator">:</div>
-        
-        <div class="timer-unit">
-          <div class="timer-value" id="minutes">00</div>
-          <div class="timer-label">Minutes</div>
-        </div>
-        
-        <div class="timer-separator">:</div>
-        
-        <div class="timer-unit">
-          <div class="timer-value" id="seconds">00</div>
-          <div class="timer-label">Seconds</div>
-        </div>
-      </div>
-    </div>
-  </section><!-- End Countdown Timer -->
-
   <!-- ======= Main Content ======= -->
   <main id="main">
     <!-- ======= Announcement (single item) ======= -->
     <section class="announcement-scroller">
       <div class="announcement-box"></div>
       <div class="announcement-content">
-        <a href="schedule.html" class="announcement-link primary" title="Conference schedule">
-          <span style="font-size:16px;">Conference Events and Paper Presentation Schedule</span>
-          <img src="./assets/img/new tag.gif" alt="New!" style="height:32px;">
-        </a>
-
-        
-       <a href="./assets/Conference Bid Proposal.pdf" target="_blank" class="announcement-link primary" title="Conference Bid Proposal (PDF)">
+        <a href="./assets/Conference Bid Proposal.pdf" target="_blank" class="announcement-link primary" title="Conference Bid Proposal (PDF)">
           <span style="font-size:16px;">Call for Bids: SPELLL 2026 and 2027 — Conference Bid Proposal (PDF)</span>
           <img src="./assets/img/new tag.gif" alt="New!" style="height:32px;">
         </a>
@@ -821,40 +892,53 @@
             </div>
           </br>
            
-            <!-- ======= Venue Gallery Section ======= -->
-        <h2 class="gallery-title">About Conference Venue</h2>
-        <div class="image-grid">
-          <div class="image-card featured">
-            <img src="./assets/img/iiitk campus.png" alt="IIIT Kottayam Campus" />
-            <div class="image-overlay">
-              <h4>IIIT Kottayam Campus</h4>
-            </div>
-          </div>
-          
-          <div class="image-card">
-            <img src="./assets/img/iiitk.JPG" alt="IIIT Kottaym Hostels" />
-            <div class="image-overlay">
-              <h4>IIIT Kottayam Campus </h4>
-            </div>
-          </div>
-          
-          <div class="image-card">
-            <img src="./assets/img/conference hall iiitk.jpg" alt="Conference hall" />
-            <div class="image-overlay">
-              <h4>Conference Hall</h4>
-            </div>
-          </div>
-        </div>
-      </br>
+            <!-- ======= Conference Highlights Section ======= -->
+        <h2 class="highlights-title">Conference Highlights</h2>
 
-        <div class="image-grid">
-         <div class="image-card featured">
-            <img src="./assets/img/Conference hall iiitk-2.jpeg" alt="Conference Hall" />
-            <div class="image-overlay">
-              <h4>Conefernce Hall</h4>
-            </div>
-          </div>
-          </div>
+<div class="highlights-grid">
+  <a href="Inauguration_images.html" class="highlight-card" target="_blank">
+    <img src="./assets/img/Inaugral ceremony/0Y4A1906.JPG" alt="Inauguration Ceremony">
+    <div class="highlight-overlay">
+      <h4>Inauguration Ceremony</h4>
+    </div>
+  </a>
+
+  <a href="Valedictory_images.html" class="highlight-card" target="_blank">
+    <img src="./assets/img/Valedictory Ceremony/0Y4A4665.JPG" alt="Valedictory Ceremony">
+    <div class="highlight-overlay">
+      <h4>Valedictory Ceremony</h4>
+    </div>
+  </a>
+
+  <a href="Cultural_events.html" class="highlight-card" target="_blank">
+    <img src="./assets/img/Cultural Events/Images/0Y4A3996.JPG" alt="Cultural Events">
+    <div class="highlight-overlay">
+      <h4>Cultural Events</h4>
+    </div>
+  </a>
+
+  <a href="Day-1_images.html" class="highlight-card" target="_blank">
+    <img src="./assets/img/DAY-1/Day - 1.png" alt="Day - 1 Highlights">
+    <div class="highlight-overlay">
+      <h4>Day - 1</h4>
+    </div>
+  </a>
+
+  <a href="Day-2_images.html" class="highlight-card" target="_blank">
+    <img src="./assets/img/DAY - 2/Day - 2.png" alt="Day - 2 Highlights">
+    <div class="highlight-overlay">
+      <h4>Day - 2</h4>
+    </div>
+  </a>
+
+  <a href="Day-3_images.html" class="highlight-card" target="_blank">
+    <img src="./assets/img/DAY - 3/Day - 3.png" alt="Day - 3 Highlights">
+    <div class="highlight-overlay">
+      <h4>Day - 3</h4>
+    </div>
+  </a>
+</div>
+
 
           <div class="row mt-5 p-4">
             <p id="old" style="font-size: 20px;" style="padding:2%;"><font color="Green">COLLABORATORS:</font><br><br>
@@ -1072,6 +1156,14 @@
   // run once in case content already ready
   setTimeout(updateAndAnimate, 150);
 })();
+const slides = document.querySelectorAll('#conferenceHero .slide');
+let currentSlide = 0;
+
+setInterval(() => {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}, 3500);
   </script>
 
   <!-- Announcement Scroller Script -->
